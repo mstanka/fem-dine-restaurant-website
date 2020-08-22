@@ -1,0 +1,35 @@
+.section-1 {
+  min-height: 144.6rem;
+  text-align: center;
+  color: $ebony-clay;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .card {
+    min-height: 68.3rem;
+  }
+
+  .image {    
+    margin-top: -7.2rem;    
+  }
+
+  .pattern {
+    padding-top: 5rem;
+  }
+
+  h2 {
+    letter-spacing: -0.4px;
+    font-size: 3.2rem;
+    font-weight: bold;
+    line-height: 4rem;
+    padding: 3rem 0;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 2.5rem;
+    letter-spacing: -0.1875px;
+  }
+}

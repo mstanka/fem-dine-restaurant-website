@@ -1,0 +1,25 @@
+.footer {
+  background: $cod-grey;
+  min-height: 44rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+.logo {
+  padding-bottom: 4rem;
+}
+
+.address {
+  padding-bottom: 3.2rem;
+}
+
+  p {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}

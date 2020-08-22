@@ -1,18 +1,18 @@
 .header {
+  background: $mirage;
   background-image: url(../images/homepage/hero-bg-mobile.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  mix-blend-mode: normal;
   color: white;
   height: 74.8rem;
   text-align: center;
-    
+
   .inner {
     height: 38.4rem;
-    width: 32.7rem;
-    position: relative;
+    position: relative;  
     top: 23.2rem;
-    margin: 0 auto;   
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -31,18 +31,5 @@
     line-height: 2.5rem;
     font-size: 1.5rem;
     letter-spacing: -0.1875px;
-  }
-
-  &_button {
-    width: 24.5rem;
-    font-weight: 500;
-    font-size: 1.4rem;
-    line-height: 1.6rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding: 2.4rem 5.4rem;
-    color: white;
-    background: black;
-    border: 1px solid white;
   }
 }

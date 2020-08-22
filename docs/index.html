@@ -18,20 +18,21 @@
         produce from the comfort of
         our
         farmhouse.</p>
-      <button class="header_button">Book a table</button>
+      <a class="button button_dark" href="./booking.html">Book a table</a>
     </div>
   </header>
 
   <section class="section-1">
-    <div class="inner">
-      <img src="./images/homepage/enjoyable-place-mobile.jpg" alt="Enjoyable Place">
-      <img src="./images/patterns/pattern-divide.svg" alt="divide pattern">
+    <div class="inner card">
+      <img class="image" src="./images/homepage/enjoyable-place-mobile.jpg" alt="Enjoyable Place">
+      <img class="pattern" src="./images/patterns/pattern-divide.svg" alt="divide pattern">
       <h2>Enjoyable place for all the family</h2>
       <p>Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange
         a tour of the farm before your meal.</p>
     </div>
-    <div class="inner">
-      <img src="./images/homepage/locally-sourced-mobile.jpg" alt="Locally sourced food">
+    <div class="inner card">
+      <img class="image" src="./images/homepage/locally-sourced-mobile.jpg" alt="Locally sourced food">
+      <img class="pattern" src="./images/patterns/pattern-divide.svg">
       <h2>The most locally sourced food</h2>
       <p>All our ingredients come directly from our farm or local fishery. So you can be sure that you’re
         eating the freshest, most sustainable food.</p>
@@ -40,81 +41,98 @@
 
   <section class="section-2">
     <div class="inner">
-      <img src="./images/patterns/pattern-divide.svg" alt="divide pattern">
-      <h2>A few highlights from our menu</h2>
-      <p>We cater for all dietary requirements, but here’s a glimpse at some of our diner’s favourites.
-        Our menu is revamped every season.</p>
-      <div>
-        <img src="./images/homepage/salmon-mobile.jpg" alt="Salmon">
-        <h3>Seared Salmon Fillet</h3>
-        <p>Our locally sourced salmon served with a refreshing buckwheat summer salad.
-        </p>
+      <div class="section-2_header">
+        <img class="pattern" src="./images/patterns/pattern-divide.svg" alt="divide pattern">
+        <h2>A few highlights from our menu</h2>
+        <p>We cater for all dietary requirements, but here’s a glimpse at some of our diner’s favourites.
+          Our menu is revamped every season.</p>
       </div>
 
-      <div>
-        <img src="./images/homepage/beef-mobile.jpg" alt="Beef">
-        <h3>Rosemary Filet Mignon</h3>
-        <p>Our prime beef served to your taste with a delicious choice of seasonal sides.</p>
-      </div>
+      <div class="section-2_container">
+        <div class="food">
+          <img src="./images/homepage/salmon-mobile.jpg" alt="Salmon">
+          <div class="food_text">
+            <h3>Seared Salmon Fillet</h3>
+            <p>Our locally sourced salmon served with a refreshing buckwheat summer salad.
+            </p>
+          </div>
+        </div>
 
-      <div>
-        <img src="./images/homepage/chocolate-mobile.jpg" alt="Chocolate">
-        <h3>Summer Fruit Chocolate Mousse</h3>
-        <p>Creamy mousse combined with summer fruits and dark chocolate shavings.</p>
+        <div class="food">
+          <img src="./images/homepage/beef-mobile.jpg" alt="Beef">
+          <div class="food_text">
+            <h3>Rosemary Filet Mignon</h3>
+            <p>Our prime beef served to your taste with a delicious choice of seasonal sides.</p>
+          </div>
+        </div>
+
+        <div class="food">
+          <img src="./images/homepage/chocolate-mobile.jpg" alt="Chocolate">
+          <div class="food_text">
+            <h3>Summer Fruit Chocolate Mousse</h3>
+            <p>Creamy mousse combined with summer fruits and dark chocolate shavings.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="section-3">
     <div class="inner">
-      <img src="./images/homepage/family-gathering-tablet.jpg" alt="Family gathering">
-      <ul>
-        <li>Family Gathering</li>
-        <li>Special Events</li>
-        <li>Social Events</li>
+      <img src="./images/homepage/family-gathering-mobile.jpg" alt="Family gathering">
+      <ul class="items">
+        <li class="item" id="item-1">Family Gathering</li>
+        <span class="item_line item_line-active" id="item_line-1"></span>
+        <li class="item" id="item-2">Special Events</li>
+        <span class="item_line" id="item_line-2"></span>
+        <li class="item" id="item-3">Social Events</li>
+        <span class="item_line" id="item_line-3"></span>
       </ul>
-      <div class="hidden">
+      <div class="item_content item_content-active" id="item_content-1">
         <h2>Family Gathering</h2>
         <p>We love catering for entire families. So please bring everyone along for a special meal with your
           loved ones. We’ll provide a memorable experience for all.</p>
       </div>
-      <div class="hidden">
+      <div class="item_content" id="item_content-2">
         <h2>Special Events</h2>
         <p>Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you.
           We’ll be sure to mark your special date with an unforgettable meal.</p>
       </div>
-      <div class="hidden">
+      <div class="item_content" id="item_content-3">
         <h2>Social Events</h2>
         <p>Are you looking to have a larger social event? No problem! We’re more than happy to cater for big
           parties. We’ll work with you to make your event a hit with everyone.</p>
       </div>
-      <button>Book a table</button>
+      <a class="button button_dark" href="./booking.html">Book a table</a>
     </div>
   </section>
 
   <section class="section-4">
     <div class="inner">
       <h2>Ready to make a reservation?</h2>
-      <button>Book a table</button>
+      <a class="button button_transparent" href="./booking.html">Book a table</a>
     </div>
   </section>
 
 
-  <footer>
-    <img src="./images/logo.svg" alt="Logo">
-    <div class="address">
-      <p>Marthwaite, Sedbergh</p>
-      <p>Cumbria</p>
-      <p>+00 44 123 4567
-      </p>
-    </div>
-    <div class="openings">
-      <p>Open Times</p>
-      <p>Mon - Fri: 09:00 AM - 10:00 PM</p>
-      <p>Sat - Sun: 09:00 AM - 11:30 PM</p>
+  <footer class="footer">
+    <div class="inner">
+      <img class="logo" src="./images/logo.svg" alt="Logo">
+      <div class="address">
+        <p>Marthwaite, Sedbergh</p>
+        <p>Cumbria</p>
+        <p>+00 44 123 4567
+        </p>
+      </div>
+      <div class="openings">
+        <p>Open Times</p>
+        <p>Mon - Fri: 09:00 AM - 10:00 PM</p>
+        <p>Sat - Sun: 09:00 AM - 11:30 PM</p>
+      </div>
     </div>
   </footer>
 
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

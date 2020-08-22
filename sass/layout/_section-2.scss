@@ -1,0 +1,59 @@
+.section-2 {
+  //min-height: 172rem;
+  background: $cod-grey;
+  color: white;
+  text-align: center;
+  padding: 5rem 0;
+  margin: 3rem 0;
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  } 
+
+  &_header {
+
+    h2 {
+      font-size: 3.2rem;
+      line-height: 4rem;
+      letter-spacing: -0.4px;
+      padding-top: 3rem;
+      padding-bottom: 1.6rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      letter-spacing: -0.1875px;
+      margin-bottom: 5rem;
+    }
+  }
+
+  &_container { 
+
+    img {
+      height: 24.5rem;
+    }
+
+    .food_text {
+      padding: 2rem 1.2rem 2.5rem 1.2rem;
+      
+      h3 {       
+        font-size: 1.8rem;
+        font-weight: bold;
+        line-height: 2.8rem;
+        letter-spacing: -0.225px;
+      }
+
+      p {
+        font-size: 1.5rem;
+        font-weight: normal;
+        line-height: 2.8rem;
+        letter-spacing: -0.1875px; 
+        padding-bottom: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);        
+      }      
+    } 
+  }
+}

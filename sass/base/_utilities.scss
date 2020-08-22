@@ -1,9 +1,73 @@
 html {
   scroll-behavior: smooth;
-  box-sizing: border-box; 
-  font-size: 62.5%;  /* 10px = 1rem */
+  box-sizing: border-box;
+  font-size: 62.5%; /* 10px = 1rem */
 }
 
 body {
   font-size: 1.4rem;
+}
+
+.inner {
+  width: 32.7rem;
+  margin: 0 auto;
+}
+
+img {
+  display: inline-block;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.button {
+  max-width: 24.5rem;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 2.4rem 5.4rem;
+  transition: all .7s ease-in;
+}
+
+.button_dark {
+  color: white;
+  background: $cod-grey;
+  border: 1px solid white;
+}
+
+.button_dark:hover {
+  color: $cod-grey;
+  background: white;
+  border: 1px solid $cod-grey;
+}
+
+.button_light {
+  color: $cod-grey;
+  background: white;
+  border: 1px solid $cod-grey;
+}
+
+.button_light:hover {
+  color: white;
+  background: $cod-grey;
+  border: 1px solid white;
+}
+
+.button_transparent {
+  color: white;
+  background: inherit;
+  border: 1px solid white;
+}
+
+.button_transparent:hover {
+   background: $cod-grey;
 }
