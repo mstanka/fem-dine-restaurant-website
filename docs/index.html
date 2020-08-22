@@ -24,18 +24,43 @@
 
   <section class="section-1">
     <div class="inner card">
-      <img class="image" src="./images/homepage/enjoyable-place-mobile.jpg" alt="Enjoyable Place">
+      <picture class="image">
+        <source
+          srcset="./images/homepage/enjoyable-place-desktop.jpg 1x, ./images/homepage/enjoyable-place-desktop@2x.jpg 2x"
+          media="(min-width: 1024px)">
+        <source
+          srcset="./images/homepage/enjoyable-place-tablet.jpg 1x, ./images/homepage/enjoyable-place-tablet@2x.jpg 2x"
+          media="(min-width: 768px)">
+        <source
+          srcset="./images/homepage/enjoyable-place-mobile.jpg 1x, ./images/homepage/enjoyable-place-mobile@2x.jpg 2x"
+          media="(min-width: 300px)" />
+        <img src="./images/homepage/enjoyable-place-mobile.jpg" alt="Enjoyable Place">
+      </picture>
       <img class="pattern" src="./images/patterns/pattern-divide.svg" alt="divide pattern">
       <h2>Enjoyable place for all the family</h2>
       <p>Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange
         a tour of the farm before your meal.</p>
+      <img class="curve curve-right" src="./images/patterns/pattern-curve-top-right.svg" alt="Curve top right">
     </div>
     <div class="inner card">
-      <img class="image" src="./images/homepage/locally-sourced-mobile.jpg" alt="Locally sourced food">
+      <picture class="image">
+        <source
+          srcset="./images/homepage/locally-sourced-desktop.jpg 1x, ./images/homepage/locally-sourced-desktop@2x.jpg 2x"
+          media="(min-width: 1024px)">
+        <source
+          srcset="./images/homepage/locally-sourced-tablet.jpg 1x, ./images/homepage/locally-sourced-tablet@2x.jpg 2x"
+          media="(min-width: 768px)">
+        <source
+          srcset="./images/homepage/locally-sourced-mobile.jpg 1x, ./images/homepage/locally-sourced-mobile@2x.jpg 2x"
+          media="(min-width: 300px)" />
+        <img src="./images/homepage/locally-sourced-mobile.jpg" alt="Locally sourced">
+      </picture>
       <img class="pattern" src="./images/patterns/pattern-divide.svg">
       <h2>The most locally sourced food</h2>
       <p>All our ingredients come directly from our farm or local fishery. So you can be sure that you’re
         eating the freshest, most sustainable food.</p>
+      <img class="curve curve-left" src="./images/patterns/pattern-curve-top-left.svg" alt="Curve top left">
+      <img class="lines" src="./images/patterns/pattern-lines.svg" alt="Lines">
     </div>
   </section>
 
@@ -50,7 +75,14 @@
 
       <div class="section-2_container">
         <div class="food">
-          <img src="./images/homepage/salmon-mobile.jpg" alt="Salmon">
+          <picture>
+            <source
+              srcset="./images/homepage/salmon-desktop-tablet.jpg 1x, ./images/homepage/salmon-desktop-tablet@2x.jpg 2x"
+              media="(min-width: 768px)">
+            <source srcset="./images/homepage/salmon-mobile.jpg 1x, ./images/homepage/salmon-mobile@2x.jpg 2x"
+              media="(min-width: 300px)" />
+            <img src="./images/homepage/salmon-mobile.jpg" alt="Salmon">
+          </picture>
           <div class="food_text">
             <h3>Seared Salmon Fillet</h3>
             <p>Our locally sourced salmon served with a refreshing buckwheat summer salad.
@@ -59,7 +91,14 @@
         </div>
 
         <div class="food">
-          <img src="./images/homepage/beef-mobile.jpg" alt="Beef">
+          <picture>
+            <source
+              srcset="./images/homepage/beef-desktop-tablet.jpg 1x, ./images/homepage/beef-desktop-tablet@2x.jpg 2x"
+              media="(min-width: 768px)">
+            <source srcset="./images/homepage/beef-mobile.jpg 1x, ./images/homepage/beef-mobile@2x.jpg 2x"
+              media="(min-width: 300px)" />
+            <img src="./images/homepage/beef-mobile.jpg" alt="Beef">
+          </picture>
           <div class="food_text">
             <h3>Rosemary Filet Mignon</h3>
             <p>Our prime beef served to your taste with a delicious choice of seasonal sides.</p>
@@ -67,7 +106,14 @@
         </div>
 
         <div class="food">
-          <img src="./images/homepage/chocolate-mobile.jpg" alt="Chocolate">
+          <picture>
+            <source
+              srcset="./images/homepage/chocolate-desktop-tablet.jpg 1x, ./images/homepage/chocolate-desktop-tablet@2x.jpg 2x"
+              media="(min-width: 768px)">
+            <source srcset="./images/homepage/chocolate-mobile.jpg 1x, ./images/homepage/chocolate-mobile@2x.jpg 2x"
+              media="(min-width: 300px)" />
+            <img src="./images/homepage/chocolate-mobile.jpg" alt="chocolate">
+          </picture>
           <div class="food_text">
             <h3>Summer Fruit Chocolate Mousse</h3>
             <p>Creamy mousse combined with summer fruits and dark chocolate shavings.</p>
@@ -79,7 +125,20 @@
 
   <section class="section-3">
     <div class="inner">
-      <img src="./images/homepage/family-gathering-mobile.jpg" alt="Family gathering">
+      <img class="curve curve-right" src="./images/patterns/pattern-curve-top-right.svg" alt="Curve top right">
+      <img class="lines lines2" src="./images/patterns/pattern-lines.svg" alt="Lines">
+      <picture>
+        <source
+          srcset="./images/homepage/family-gathering-desktop.jpg 1x, ./images/homepage/family-gathering-desktop@2x.jpg 2x"
+          media="(min-width: 1024px)">
+        <source
+          srcset="./images/homepage/family-gathering-tablet.jpg 1x, ./images/homepage/family-gathering-tablet@2x.jpg 2x"
+          media="(min-width: 768px)">
+        <source
+          srcset="./images/homepage/family-gathering-mobile.jpg 1x, ./images/homepage/family-gathering-mobile@2x.jpg 2x"
+          media="(min-width: 300px)" />
+        <img src="./images/homepage/family-gathering-mobile.jpg" alt="Family Gathering">
+      </picture>
       <ul class="items">
         <li class="item" id="item-1">Family Gathering</li>
         <span class="item_line item_line-active" id="item_line-1"></span>
@@ -114,21 +173,20 @@
     </div>
   </section>
 
-
   <footer class="footer">
-    <div class="inner">
-      <img class="logo" src="./images/logo.svg" alt="Logo">
-      <div class="address">
-        <p>Marthwaite, Sedbergh</p>
-        <p>Cumbria</p>
-        <p>+00 44 123 4567
-        </p>
-      </div>
-      <div class="openings">
-        <p>Open Times</p>
-        <p>Mon - Fri: 09:00 AM - 10:00 PM</p>
-        <p>Sat - Sun: 09:00 AM - 11:30 PM</p>
-      </div>
+    <div class="logo">
+      <img src="./images/logo.svg" alt="Logo">
+    </div>
+    <div class="address">
+      <p>Marthwaite, Sedbergh</p>
+      <p>Cumbria</p>
+      <p>+00 44 123 4567
+      </p>
+    </div>
+    <div class="openings">
+      <p>Open Times</p>
+      <p>Mon - Fri: 09:00 AM - 10:00 PM</p>
+      <p>Sat - Sun: 09:00 AM - 11:30 PM</p>
     </div>
   </footer>
 

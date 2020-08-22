@@ -1,0 +1,17 @@
+@mixin flex($direction, $justifyContent){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justifyContent;
+  align-items: center; 
+}
+
+@mixin media-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin media-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}

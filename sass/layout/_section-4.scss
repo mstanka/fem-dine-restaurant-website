@@ -1,16 +1,25 @@
 .section-4 {
   min-height: 32.8rem;
   background: url(../images/homepage/ready-bg-mobile.jpg);
-  display: flex;
   text-align: center;
-  justify-content: center;
-  align-items: center;
+  @include flex(column, center);
   color: white;
 
+  .inner {
+    @include media-md {
+      width: 63.8rem;
+    }
+  }
   h2 {
     font-size: 3.2rem;
     line-height: 4rem;
     letter-spacing: -0.4px;
     padding-bottom: 2rem;
+
+    @include media-md {
+      font-size: 4rem;
+      line-height: 5.6rem;
+      letter-spacing: -0.5px;
+    }
   }
 }

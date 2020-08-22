@@ -9,10 +9,15 @@ body {
 }
 
 .inner {
-  width: 32.7rem;
+  max-width: 32.7rem;
   margin: 0 auto;
+
+  @include media-md {
+    max-width: 63.8rem;
+  }
 }
 
+picture, 
 img {
   display: inline-block;
 }

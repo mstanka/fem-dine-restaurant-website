@@ -2,20 +2,55 @@
   min-height: 144.6rem;
   text-align: center;
   color: $ebony-clay;
-  display: flex;
+  @include flex(column, space-between);
   flex-direction: column;
-  justify-content: space-between;
+  position: relative;
 
   .card {
     min-height: 68.3rem;
   }
 
-  .image {    
-    margin-top: -7.2rem;    
+  .image {
+    margin: -7.2rem auto 0 auto;
   }
 
   .pattern {
     padding-top: 5rem;
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+  }
+
+  .curve {
+    display: none;
+
+    @include media-md {
+      display: block;
+      width: 100%;
+      position: absolute;
+    }
+  }
+
+  .curve-right {
+    top: 16rem;
+    left: -37.8rem;
+  }
+
+  .curve-left {
+    top: 120rem;
+    left: 38.4rem;
+  }
+
+  .lines {
+    display: none;
+
+    @include media-md {
+      display: block;
+      width: 16rem;
+      position: absolute;
+      top: 92rem;
+      right: 5rem;
+    }
   }
 
   h2 {
@@ -24,6 +59,14 @@
     font-weight: bold;
     line-height: 4rem;
     padding: 3rem 0;
+
+    @include media-md {
+      font-size: 4rem;
+      line-height: 5.6rem;
+      letter-spacing: -0.5px;
+      max-width: 45.1rem;
+      margin: 0 auto;
+    }
   }
 
   p {
@@ -31,5 +74,13 @@
     font-weight: normal;
     line-height: 2.5rem;
     letter-spacing: -0.1875px;
+
+    @include media-md {
+      font-size: 1.8rem;
+      line-height: 3rem;
+      letter-spacing: -0.225px;
+      max-width: 45.1rem;
+      margin: 0 auto;
+    }
   }
 }

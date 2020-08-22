@@ -3,6 +3,11 @@
   margin: 8rem 0;
   text-align: center;
   color: $ebony-clay;
+  position: relative;
+
+  @include media-md {
+    margin: 20rem 0 10rem 0;
+  }
 
   img {
     width: 100%;
@@ -17,13 +22,26 @@
     line-height: 2.8rem;
     letter-spacing: 2px;
 
+    @include media-md {
+      @include flex(row, space-between);
+      min-height: 3.7rem;
+    }
+
     .item {
       opacity: 0.5;
+      cursor: pointer;
+
+      @include media-md {
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 2.8rem;
+        letter-spacing: 2px;
+      }
     }
 
     .item-active {
       color: #4c4c4c;
-      opacity: 1; 
+      opacity: 1;
     }
 
     .item_line {
@@ -34,6 +52,10 @@
       visibility: hidden;
       opacity: 0.5;
       vertical-align: top;
+
+      @include media-md {
+        display: none;
+      }
     }
     .item_line-active {
       visibility: visible;
@@ -42,10 +64,14 @@
 
   .item_content {
     display: none;
+
+    @include media-md {
+      padding-top: 4rem;
+    }
   }
 
   .item_content-active {
-    display: block;   
+    display: block;
   }
 
   h2 {
@@ -53,6 +79,12 @@
     font-size: 3.2rem;
     line-height: 4rem;
     letter-spacing: -0.4px;
+
+    @include media-md {
+      font-size: 4rem;
+      line-height: 5.6rem;
+      letter-spacing: -0.5px;
+    }
   }
 
   p {
@@ -60,5 +92,40 @@
     line-height: 2.5rem;
     letter-spacing: -0.1875px;
     padding: 2rem 0;
+
+    @include media-md {
+      padding: 2rem 4rem;
+      font-size: 1.8rem;
+      line-height: 3rem;
+      letter-spacing: -0.225px;
+    }
+  }
+
+  .curve {
+    display: none;
+
+    @include media-md {
+      display: block;
+      width: 100%;
+      position: absolute;
+    }
+  }
+
+  .curve-right {
+    top: -10rem;
+    left: -37.8rem;
+  }
+
+  .lines {
+    display: none;
+
+    @include media-md {
+      display: block;
+      width: 16rem;
+      height: 7.6rem;
+      position: absolute;
+      top: -3.5rem;
+      left: 4rem;
+    }
   }
 }

@@ -6,20 +6,27 @@
   padding: 5rem 0;
   margin: 3rem 0;
 
+  @include media-md {
+    min-height: 89.1rem;
+  }
+
   .inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  } 
+    @include flex(column, center);
+  }
 
   &_header {
-
     h2 {
       font-size: 3.2rem;
       line-height: 4rem;
       letter-spacing: -0.4px;
       padding-top: 3rem;
       padding-bottom: 1.6rem;
+
+      @include media-md {
+        font-size: 4rem;
+        line-height: 5.6rem;
+        letter-spacing: -0.5px;
+      }
     }
 
     p {
@@ -27,33 +34,70 @@
       line-height: 2.5rem;
       letter-spacing: -0.1875px;
       margin-bottom: 5rem;
+
+      @include media-md {
+        font-size: 1.8rem;
+        line-height: 3rem;
+        letter-spacing: -0.225px;
+      }
     }
   }
 
-  &_container { 
+  &_container {
+    @include flex(column, center);
+
+    .food {
+      @include media-md {
+        @include flex(row, center);
+        margin-top: 2.8rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      }
+    }
 
     img {
       height: 24.5rem;
+
+      @include media-md {
+        height: 9.6rem;
+      }
     }
 
     .food_text {
       padding: 2rem 1.2rem 2.5rem 1.2rem;
-      
-      h3 {       
+
+      @include media-md {
+        text-align: left;
+        margin-left: 3rem;
+      }
+
+      h3 {
         font-size: 1.8rem;
         font-weight: bold;
         line-height: 2.8rem;
         letter-spacing: -0.225px;
+
+        @include media-md {
+          font-size: 1.8rem;
+          line-height: 2.8rem;
+          letter-spacing: -0.225px;
+        }
       }
 
       p {
         font-size: 1.5rem;
         font-weight: normal;
         line-height: 2.8rem;
-        letter-spacing: -0.1875px; 
+        letter-spacing: -0.1875px;
         padding-bottom: 1rem;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.15);        
-      }      
-    } 
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+        @include media-md {
+          font-size: 1.5rem;
+          line-height: 2.8rem;
+          letter-spacing: -0.1875px;
+          border-bottom: none;
+        }
+      }
+    }
   }
 }
