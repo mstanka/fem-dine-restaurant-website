@@ -36,10 +36,12 @@
           media="(min-width: 300px)" />
         <img src="./images/homepage/enjoyable-place-mobile.jpg" alt="Enjoyable Place">
       </picture>
-      <img class="pattern" src="./images/patterns/pattern-divide.svg" alt="divide pattern">
-      <h2>Enjoyable place for all the family</h2>
-      <p>Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange
-        a tour of the farm before your meal.</p>
+      <div>
+        <img class="pattern" src="./images/patterns/pattern-divide.svg" alt="divide pattern">
+        <h2>Enjoyable place for all the family</h2>
+        <p>Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange
+          a tour of the farm before your meal.</p>
+      </div>
       <img class="curve curve-right" src="./images/patterns/pattern-curve-top-right.svg" alt="Curve top right">
     </div>
     <div class="inner card">
@@ -55,10 +57,13 @@
           media="(min-width: 300px)" />
         <img src="./images/homepage/locally-sourced-mobile.jpg" alt="Locally sourced">
       </picture>
-      <img class="pattern" src="./images/patterns/pattern-divide.svg">
-      <h2>The most locally sourced food</h2>
-      <p>All our ingredients come directly from our farm or local fishery. So you can be sure that you’re
-        eating the freshest, most sustainable food.</p>
+
+      <div>
+        <img class="pattern" src="./images/patterns/pattern-divide.svg">
+        <h2>The most locally sourced food</h2>
+        <p>All our ingredients come directly from our farm or local fishery. So you can be sure that you’re
+          eating the freshest, most sustainable food.</p>
+      </div>
       <img class="curve curve-left" src="./images/patterns/pattern-curve-top-left.svg" alt="Curve top left">
       <img class="lines" src="./images/patterns/pattern-lines.svg" alt="Lines">
     </div>
@@ -125,44 +130,50 @@
 
   <section class="section-3">
     <div class="inner">
-      <img class="curve curve-right" src="./images/patterns/pattern-curve-top-right.svg" alt="Curve top right">
-      <img class="lines lines2" src="./images/patterns/pattern-lines.svg" alt="Lines">
-      <picture>
-        <source
-          srcset="./images/homepage/family-gathering-desktop.jpg 1x, ./images/homepage/family-gathering-desktop@2x.jpg 2x"
-          media="(min-width: 1024px)">
-        <source
-          srcset="./images/homepage/family-gathering-tablet.jpg 1x, ./images/homepage/family-gathering-tablet@2x.jpg 2x"
-          media="(min-width: 768px)">
-        <source
-          srcset="./images/homepage/family-gathering-mobile.jpg 1x, ./images/homepage/family-gathering-mobile@2x.jpg 2x"
-          media="(min-width: 300px)" />
-        <img src="./images/homepage/family-gathering-mobile.jpg" alt="Family Gathering">
-      </picture>
-      <ul class="items">
-        <li class="item" id="item-1">Family Gathering</li>
-        <span class="item_line item_line-active" id="item_line-1"></span>
-        <li class="item" id="item-2">Special Events</li>
-        <span class="item_line" id="item_line-2"></span>
-        <li class="item" id="item-3">Social Events</li>
-        <span class="item_line" id="item_line-3"></span>
-      </ul>
-      <div class="item_content item_content-active" id="item_content-1">
-        <h2>Family Gathering</h2>
-        <p>We love catering for entire families. So please bring everyone along for a special meal with your
-          loved ones. We’ll provide a memorable experience for all.</p>
+      <div class="picture_part">
+        <img class="curve curve-right" src="./images/patterns/pattern-curve-top-right.svg" alt="Curve top right">
+        <img class="lines" src="./images/patterns/pattern-lines.svg" alt="Lines">
+        <picture>
+          <source
+            srcset="./images/homepage/family-gathering-desktop.jpg 1x, ./images/homepage/family-gathering-desktop@2x.jpg 2x"
+            media="(min-width: 1024px)">
+          <source
+            srcset="./images/homepage/family-gathering-tablet.jpg 1x, ./images/homepage/family-gathering-tablet@2x.jpg 2x"
+            media="(min-width: 768px)">
+          <source
+            srcset="./images/homepage/family-gathering-mobile.jpg 1x, ./images/homepage/family-gathering-mobile@2x.jpg 2x"
+            media="(min-width: 300px)" />
+          <img src="./images/homepage/family-gathering-mobile.jpg" alt="Family Gathering">
+        </picture>
       </div>
-      <div class="item_content" id="item_content-2">
-        <h2>Special Events</h2>
-        <p>Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you.
-          We’ll be sure to mark your special date with an unforgettable meal.</p>
+      <div class="items_part">
+        <ul class="items">
+          <li class="item" id="item-1">Family Gathering</li>
+          <span class="item_line item_line-active" id="item_line-1"></span>
+          <li class="item" id="item-2">Special Events</li>
+          <span class="item_line" id="item_line-2"></span>
+          <li class="item" id="item-3">Social Events</li>
+          <span class="item_line" id="item_line-3"></span>
+        </ul>
+        <div>
+          <div class="item_content item_content-active" id="item_content-1">
+            <h2>Family Gathering</h2>
+            <p>We love catering for entire families. So please bring everyone along for a special meal with your
+              loved ones. We’ll provide a memorable experience for all.</p>
+          </div>
+          <div class="item_content" id="item_content-2">
+            <h2>Special Events</h2>
+            <p>Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you.
+              We’ll be sure to mark your special date with an unforgettable meal.</p>
+          </div>
+          <div class="item_content" id="item_content-3">
+            <h2>Social Events</h2>
+            <p>Are you looking to have a larger social event? No problem! We’re more than happy to cater for big
+              parties. We’ll work with you to make your event a hit with everyone.</p>
+          </div>
+          <a class="button button_dark" href="./booking.html">Book a table</a>
+        </div>
       </div>
-      <div class="item_content" id="item_content-3">
-        <h2>Social Events</h2>
-        <p>Are you looking to have a larger social event? No problem! We’re more than happy to cater for big
-          parties. We’ll work with you to make your event a hit with everyone.</p>
-      </div>
-      <a class="button button_dark" href="./booking.html">Book a table</a>
     </div>
   </section>
 

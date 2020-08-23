@@ -10,11 +10,28 @@
     min-height: 89.1rem;
   }
 
+  @include media-lg {
+    min-height: 76.1rem;
+    margin-top: -8rem;
+    padding-top: 10rem;
+  }
+
   .inner {
     @include flex(column, center);
+
+    @include media-lg {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: start;
+    }
   }
 
   &_header {
+    @include media-lg {
+      max-width: 44.2rem;
+      text-align: left;
+    }
+
     h2 {
       font-size: 3.2rem;
       line-height: 4rem;
@@ -23,6 +40,12 @@
       padding-bottom: 1.6rem;
 
       @include media-md {
+        font-size: 4rem;
+        line-height: 5.6rem;
+        letter-spacing: -0.5px;
+      }
+
+      @include media-lg {
         font-size: 4rem;
         line-height: 5.6rem;
         letter-spacing: -0.5px;
@@ -40,6 +63,12 @@
         line-height: 3rem;
         letter-spacing: -0.225px;
       }
+
+      @include media-lg {
+        font-size: 1.8rem;
+        line-height: 3rem;
+        letter-spacing: -0.225px;
+      }
     }
   }
 
@@ -51,6 +80,10 @@
         @include flex(row, center);
         margin-top: 2.8rem;
         border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+        &:last-of-type {
+          border-bottom: none;
+        }
       }
     }
 
@@ -90,6 +123,10 @@
         letter-spacing: -0.1875px;
         padding-bottom: 1rem;
         border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+        &:last-of-type {
+          border-bottom: none;
+        }
 
         @include media-md {
           font-size: 1.5rem;

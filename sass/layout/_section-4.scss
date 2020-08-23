@@ -1,13 +1,30 @@
 .section-4 {
   min-height: 32.8rem;
-  background: url(../images/homepage/ready-bg-mobile.jpg);
+  background-image: url(../images/homepage/ready-bg-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
   @include flex(column, center);
   color: white;
 
+  @include media-md {
+    min-height: 24rem;
+    background-image: url(../images/homepage/ready-bg-tablet.jpg);
+  }
+
+  @include media-lg {
+    background-image: url(../images/homepage/ready-bg-desktop.jpg);
+  }
+
   .inner {
     @include media-md {
       width: 63.8rem;
+    }
+
+    @include media-lg {
+      min-width: 100rem;
+      @include flex(row, space-between);
+      align-items: center;
     }
   }
   h2 {
@@ -20,6 +37,10 @@
       font-size: 4rem;
       line-height: 5.6rem;
       letter-spacing: -0.5px;
+    }
+
+    @include media-lg {
+      padding: 0; 
     }
   }
 }

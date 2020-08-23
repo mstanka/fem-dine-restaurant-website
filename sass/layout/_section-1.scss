@@ -3,15 +3,39 @@
   text-align: center;
   color: $ebony-clay;
   @include flex(column, space-between);
-  flex-direction: column;
-  position: relative;
 
   .card {
     min-height: 68.3rem;
+    position: relative;
+
+    @include media-lg {
+      @include flex(row, space-between);
+      align-items: center;
+      text-align: left;
+    }
+  }
+
+  .card:first-child > div {
+    @include media-lg {
+      padding-left: 8rem;
+    }
+  }
+
+  .card:last-child > div {
+    @include media-lg {
+      padding-right: 8rem;
+    }
+  }
+
+  .card:last-child {
+    @include media-lg {
+      flex-direction: row-reverse;
+    }
   }
 
   .image {
     margin: -7.2rem auto 0 auto;
+    position: relative;
   }
 
   .pattern {
@@ -19,10 +43,15 @@
     display: block;
     width: 20%;
     margin: 0 auto;
+
+    @include media-lg {
+      margin-left: 0;
+    }
   }
 
   .curve {
     display: none;
+    z-index: -1;
 
     @include media-md {
       display: block;
@@ -34,11 +63,22 @@
   .curve-right {
     top: 16rem;
     left: -37.8rem;
+
+    @include media-lg {
+      top: 28rem;
+      left: -35rem;
+      height: 40%;
+    }
   }
 
   .curve-left {
     top: 120rem;
-    left: 38.4rem;   
+    left: 38.4rem;
+
+    @include media-lg {
+      top: 40rem;
+      left: 35rem;
+    }
   }
 
   .lines {
@@ -48,8 +88,13 @@
       display: block;
       width: 16rem;
       position: absolute;
-      top: 92rem;
-      right: 4rem;
+      top: 15rem;
+      right: -2rem;
+    }
+
+    @include media-lg {
+      top: 20rem;
+      right: -10rem;
     }
   }
 
@@ -68,6 +113,14 @@
       margin: 0 auto;
       padding: 2rem 12rem;
     }
+
+    @include media-lg {
+      padding: 2rem 0;
+      font-size: 4rem;
+      line-height: 5.6rem;
+      letter-spacing: -0.5px;
+      padding-top: 3rem;
+    }
   }
 
   p {
@@ -82,6 +135,12 @@
       letter-spacing: -0.225px;
       max-width: 45.1rem;
       margin: 0 auto;
+    }
+
+    @include media-lg {
+      font-size: 1.8rem;
+      line-height: 3rem;
+      letter-spacing: -0.225px;
     }
   }
 }

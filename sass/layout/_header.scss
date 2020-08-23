@@ -4,7 +4,6 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  mix-blend-mode: normal;
   color: white;
   min-height: 74.8rem;
   text-align: center;
@@ -12,6 +11,12 @@
   @include media-md {
     background-image: url(../images/homepage/hero-bg-tablet.jpg);
     min-height: 99.2rem;
+  }
+
+  @include media-lg {
+    background-image: url(../images/homepage/hero-bg-desktop.jpg);
+    min-height: 82rem;
+    text-align: left;
   }
 
   .inner {
@@ -24,20 +29,41 @@
       top: 37.4rem;
       height: 40.2rem;
     }
+
+    @include media-lg {
+      align-items: self-start;
+      top: 15rem;
+      height: 50rem;
+      //left: -6rem;
+    }
+  }
+
+  &_logo {
+
+    @include media-lg {
+      padding-bottom: 12rem;
+    }
   }
 
   &_title {
     font-weight: 300;
     font-size: 3.2rem;
     line-height: 4rem;
-    letter-spacing: -0.4px;
-    text-align: center;
+    letter-spacing: -0.4px; 
 
     @include media-md {
       font-size: 4.8rem;
       line-height: 6.4rem;
       letter-spacing: -0.6px;
       padding: 0 7rem;
+    }
+
+    @include media-lg {
+      padding: 0;
+      font-size: 6.4rem;
+      line-height: 7.2rem;
+      letter-spacing: -0.8px;
+      max-width: 55rem;
     }
   }
 
@@ -50,7 +76,15 @@
       font-size: 1.8rem;
       line-height: 3rem;
       letter-spacing: -0.225px;
-      max-width: 60.3rem;     
+      max-width: 60.3rem;
+    }
+
+    @include media-lg {
+      font-size: 1.8rem;
+      line-height: 3rem;
+      letter-spacing: -0.225px;
+      max-width: 44.5rem;
+      padding-bottom: 2rem;
     }
   }
 }
