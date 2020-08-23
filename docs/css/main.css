@@ -152,7 +152,7 @@ li {
     font-size: 4.8rem;
     line-height: 6.4rem;
     letter-spacing: -0.6px;
-    padding: 0 3rem;
+    padding: 0 7rem;
   }
 }
 
@@ -166,8 +166,8 @@ li {
   .header_description {
     font-size: 1.8rem;
     line-height: 3rem;
-    letter-spacing: -0.625px;
-    max-width: 57.3rem;
+    letter-spacing: -0.225px;
+    max-width: 60.3rem;
   }
 }
 
@@ -239,7 +239,7 @@ li {
     width: 16rem;
     position: absolute;
     top: 92rem;
-    right: 5rem;
+    right: 4rem;
   }
 }
 
@@ -248,7 +248,7 @@ li {
   font-size: 3.2rem;
   font-weight: bold;
   line-height: 4rem;
-  padding: 3rem 0;
+  padding: 3rem 0rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -258,6 +258,7 @@ li {
     letter-spacing: -0.5px;
     max-width: 45.1rem;
     margin: 0 auto;
+    padding: 2rem 12rem;
   }
 }
 
@@ -439,7 +440,7 @@ li {
 
 @media screen and (min-width: 768px) {
   .section-3 {
-    margin: 20rem 0 10rem 0;
+    margin: 10rem 0;
   }
 }
 
@@ -588,7 +589,7 @@ li {
     height: 7.6rem;
     position: absolute;
     top: -3.5rem;
-    left: 4rem;
+    left: 3rem;
   }
 }
 
@@ -649,7 +650,7 @@ li {
 
 @media screen and (min-width: 768px) {
   .footer {
-    min-height: 32.8rem;
+    min-height: 28rem;
     padding: 6.4rem 4rem;
     -ms-grid-columns: 1fr 2fr;
         grid-template-columns: 1fr 2fr;

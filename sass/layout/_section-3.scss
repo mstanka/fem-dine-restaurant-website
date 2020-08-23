@@ -6,7 +6,7 @@
   position: relative;
 
   @include media-md {
-    margin: 20rem 0 10rem 0;
+    margin: 10rem 0;
   }
 
   img {
@@ -125,7 +125,7 @@
       height: 7.6rem;
       position: absolute;
       top: -3.5rem;
-      left: 4rem;
+      left: 3rem;
     }
   }
 }

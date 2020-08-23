@@ -8,7 +8,7 @@
   align-items: center;
 
   @include media-md {
-    min-height: 32.8rem;
+    min-height: 28rem;
     padding: 6.4rem 4rem;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 14rem 14rem;
