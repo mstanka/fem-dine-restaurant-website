@@ -33,7 +33,7 @@
     }
   }
 
-  .image {
+  .picture {
     margin: -7.2rem auto 0 auto;
     position: relative;
   }
@@ -41,7 +41,6 @@
   .pattern {
     padding-top: 5rem;
     display: block;
-    width: 20%;
     margin: 0 auto;
 
     @include media-lg {
@@ -60,7 +59,7 @@
     }
   }
 
-  .curve-right {
+  .curve--right {
     top: 16rem;
     left: -37.8rem;
 
@@ -71,7 +70,7 @@
     }
   }
 
-  .curve-left {
+  .curve--left {
     top: 120rem;
     left: 38.4rem;
 
@@ -98,49 +97,24 @@
     }
   }
 
-  h2 {
-    letter-spacing: -0.4px;
-    font-size: 3.2rem;
-    font-weight: bold;
-    line-height: 4rem;
+  .title-2 {
     padding: 3rem 0rem;
 
     @include media-md {
-      font-size: 4rem;
-      line-height: 5.6rem;
-      letter-spacing: -0.5px;
       max-width: 45.1rem;
       margin: 0 auto;
       padding: 2rem 12rem;
     }
 
     @include media-lg {
-      padding: 2rem 0;
-      font-size: 4rem;
-      line-height: 5.6rem;
-      letter-spacing: -0.5px;
-      padding-top: 3rem;
+      padding: 3rem 0 2rem 0;
     }
   }
 
-  p {
-    font-size: 1.5rem;
-    font-weight: normal;
-    line-height: 2.5rem;
-    letter-spacing: -0.1875px;
-
+  .paragraph {
     @include media-md {
-      font-size: 1.8rem;
-      line-height: 3rem;
-      letter-spacing: -0.225px;
       max-width: 45.1rem;
       margin: 0 auto;
-    }
-
-    @include media-lg {
-      font-size: 1.8rem;
-      line-height: 3rem;
-      letter-spacing: -0.225px;
     }
   }
 }

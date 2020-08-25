@@ -2,17 +2,20 @@
 function toggleItem(toggleItem) {
   for (let i = 1; i < 4; i++) {
     const item = document.getElementById("item-" + i);
-    const itemLine = document.getElementById("item_line-" + i);
-    const itemContent = document.getElementById("item_content-" + i);
+    const line = document.getElementById("line-" + i);
+    const content = document.getElementById("content-" + i);
+    const picture = document.getElementById("picture-" + i);
 
-    item.classList.remove("item-active");
-    itemLine.classList.remove("item_line-active");
-    itemContent.classList.remove("item_content-active");
+    item.classList.remove("items__item--active");
+    line.classList.remove("items__line--active");
+    content.classList.remove("items__content--active");
+    picture.classList.remove("picture--active");
 
     if (i === toggleItem) {
-      item.classList.add("item-active");
-      itemLine.classList.add("item_line-active");
-      itemContent.classList.add("item_content-active");
+      item.classList.add("items__item--active");
+      line.classList.add("items__line--active");
+      content.classList.add("items__content--active");
+      picture.classList.add("picture--active");
     }
   }
 }

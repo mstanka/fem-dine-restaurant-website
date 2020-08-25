@@ -21,7 +21,7 @@ body {
   }
 }
 
-picture, 
+picture,
 img {
   display: inline-block;
 }
@@ -44,39 +44,65 @@ li {
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 2.4rem 5.4rem;
-  transition: all .7s ease-in;
+  transition: all 0.7s ease-in;
 }
 
-.button_dark {
+.button--dark {
   color: white;
   background: $cod-grey;
   border: 1px solid white;
 }
 
-.button_dark:hover {
+.button--dark:hover {
   color: $cod-grey;
   background: white;
   border: 1px solid $cod-grey;
 }
 
-.button_light {
+.button--light {
   color: $cod-grey;
   background: white;
   border: 1px solid $cod-grey;
 }
 
-.button_light:hover {
+.button--light:hover {
   color: white;
   background: $cod-grey;
   border: 1px solid white;
 }
 
-.button_transparent {
+.button--transparent {
   color: white;
   background: inherit;
   border: 1px solid white;
 }
 
-.button_transparent:hover {
-   background: $cod-grey;
+.button--transparent:hover {
+  background: $cod-grey;
+}
+
+.title-2 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  letter-spacing: -0.4px;
+  line-height: 4rem;
+
+  @include media-md {
+    font-size: 4rem;
+    letter-spacing: -0.5px;
+    line-height: 5.6rem;
+  }
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  font-weight: normal;
+  letter-spacing: -0.1875px;
+  line-height: 2.5rem;
+
+  @include media-md {
+    font-size: 1.8rem;
+    letter-spacing: -0.225px;
+    line-height: 3rem;
+  }
 }

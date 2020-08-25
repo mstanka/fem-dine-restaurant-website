@@ -1,8 +1,8 @@
-@mixin flex($direction, $justifyContent){
+@mixin flex($direction, $justifyContent) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justifyContent;
-  align-items: center; 
+  align-items: center;
 }
 
 @mixin media-md {

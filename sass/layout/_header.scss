@@ -38,18 +38,17 @@
     }
   }
 
-  &_logo {
-
+  &__logo {
     @include media-lg {
       padding-bottom: 12rem;
     }
   }
 
-  &_title {
+  &__title {
     font-weight: 300;
     font-size: 3.2rem;
     line-height: 4rem;
-    letter-spacing: -0.4px; 
+    letter-spacing: -0.4px;
 
     @include media-md {
       font-size: 4.8rem;
@@ -67,24 +66,12 @@
     }
   }
 
-  &_description {
-    line-height: 2.5rem;
-    font-size: 1.5rem;
-    letter-spacing: -0.1875px;
+  .paragraph {
+    max-width: 60.3rem;
+  }
 
-    @include media-md {
-      font-size: 1.8rem;
-      line-height: 3rem;
-      letter-spacing: -0.225px;
-      max-width: 60.3rem;
-    }
-
-    @include media-lg {
-      font-size: 1.8rem;
-      line-height: 3rem;
-      letter-spacing: -0.225px;
-      max-width: 44.5rem;
-      padding-bottom: 2rem;
-    }
+  @include media-lg {
+    max-width: 44.5rem;
+    padding-bottom: 2rem;
   }
 }

@@ -12,19 +12,19 @@
 <body>
   <header class="header">
     <div class="inner">
-      <img class="header_logo" src="./images/logo.svg" alt="Logo">
-      <h1 class="header_title">Exquisite dining since 1989</h1>
-      <p class="header_description">Experience our seasonal menu in beautiful country surroundings. Eat the freshest
+      <img class="header__logo" src="./images/logo.svg" alt="Logo">
+      <h1 class="header__title">Exquisite dining since 1989</h1>
+      <p class="paragraph">Experience our seasonal menu in beautiful country surroundings. Eat the freshest
         produce from the comfort of
         our
         farmhouse.</p>
-      <a class="button button_dark" href="./booking.html">Book a table</a>
+      <a class="button button--dark" href="./booking.html">Book a table</a>
     </div>
   </header>
 
   <section class="section-1">
     <div class="inner card">
-      <picture class="image">
+      <picture class="picture">
         <source
           srcset="./images/homepage/enjoyable-place-desktop.jpg 1x, ./images/homepage/enjoyable-place-desktop@2x.jpg 2x"
           media="(min-width: 1024px)">
@@ -38,14 +38,14 @@
       </picture>
       <div>
         <img class="pattern" src="./images/patterns/pattern-divide.svg" alt="divide pattern">
-        <h2>Enjoyable place for all the family</h2>
-        <p>Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange
+        <h2 class="title-2">Enjoyable place for all the family</h2>
+        <p class="paragraph">Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange
           a tour of the farm before your meal.</p>
       </div>
-      <img class="curve curve-right" src="./images/patterns/pattern-curve-top-right.svg" alt="Curve top right">
+      <img class="curve curve--right" src="./images/patterns/pattern-curve-top-right.svg" alt="Curve top right">
     </div>
     <div class="inner card">
-      <picture class="image">
+      <picture class="picture">
         <source
           srcset="./images/homepage/locally-sourced-desktop.jpg 1x, ./images/homepage/locally-sourced-desktop@2x.jpg 2x"
           media="(min-width: 1024px)">
@@ -60,25 +60,25 @@
 
       <div>
         <img class="pattern" src="./images/patterns/pattern-divide.svg">
-        <h2>The most locally sourced food</h2>
-        <p>All our ingredients come directly from our farm or local fishery. So you can be sure that you’re
+        <h2 class="title-2">The most locally sourced food</h2>
+        <p class="paragraph">All our ingredients come directly from our farm or local fishery. So you can be sure that you’re
           eating the freshest, most sustainable food.</p>
       </div>
-      <img class="curve curve-left" src="./images/patterns/pattern-curve-top-left.svg" alt="Curve top left">
+      <img class="curve curve--left" src="./images/patterns/pattern-curve-top-left.svg" alt="Curve top left">
       <img class="lines" src="./images/patterns/pattern-lines.svg" alt="Lines">
     </div>
   </section>
 
   <section class="section-2">
     <div class="inner">
-      <div class="section-2_header">
+      <div class="section-2__header">
         <img class="pattern" src="./images/patterns/pattern-divide.svg" alt="divide pattern">
-        <h2>A few highlights from our menu</h2>
-        <p>We cater for all dietary requirements, but here’s a glimpse at some of our diner’s favourites.
+        <h2 class="title-2">A few highlights from our menu</h2>
+        <p class="paragraph">We cater for all dietary requirements, but here’s a glimpse at some of our diner’s favourites.
           Our menu is revamped every season.</p>
       </div>
 
-      <div class="section-2_container">
+      <div class="section-2__container">
         <div class="food">
           <picture>
             <source
@@ -88,7 +88,7 @@
               media="(min-width: 300px)" />
             <img src="./images/homepage/salmon-mobile.jpg" alt="Salmon">
           </picture>
-          <div class="food_text">
+          <div class="food__text">
             <h3>Seared Salmon Fillet</h3>
             <p>Our locally sourced salmon served with a refreshing buckwheat summer salad.
             </p>
@@ -104,7 +104,7 @@
               media="(min-width: 300px)" />
             <img src="./images/homepage/beef-mobile.jpg" alt="Beef">
           </picture>
-          <div class="food_text">
+          <div class="food__text">
             <h3>Rosemary Filet Mignon</h3>
             <p>Our prime beef served to your taste with a delicious choice of seasonal sides.</p>
           </div>
@@ -119,7 +119,7 @@
               media="(min-width: 300px)" />
             <img src="./images/homepage/chocolate-mobile.jpg" alt="chocolate">
           </picture>
-          <div class="food_text">
+          <div class="food__text">
             <h3>Summer Fruit Chocolate Mousse</h3>
             <p>Creamy mousse combined with summer fruits and dark chocolate shavings.</p>
           </div>
@@ -130,10 +130,8 @@
 
   <section class="section-3">
     <div class="inner">
-      <div class="picture_part">
-        <img class="curve curve-right" src="./images/patterns/pattern-curve-top-right.svg" alt="Curve top right">
-        <img class="lines" src="./images/patterns/pattern-lines.svg" alt="Lines">
-        <picture>
+      <div class="pictures">
+        <picture class=" picture picture--active" id="picture-1">
           <source
             srcset="./images/homepage/family-gathering-desktop.jpg 1x, ./images/homepage/family-gathering-desktop@2x.jpg 2x"
             media="(min-width: 1024px)">
@@ -145,33 +143,65 @@
             media="(min-width: 300px)" />
           <img src="./images/homepage/family-gathering-mobile.jpg" alt="Family Gathering">
         </picture>
+        <picture class="picture" id="picture-2">
+          <source
+            srcset="./images/homepage/special-events-desktop.jpg 1x, ./images/homepage/special-events-desktop@2x.jpg 2x"
+            media="(min-width: 1024px)">
+          <source
+            srcset="./images/homepage/special-events-tablet.jpg 1x, ./images/homepage/special-events-tablet@2x.jpg 2x"
+            media="(min-width: 768px)">
+          <source
+            srcset="./images/homepage/special-events-mobile.jpg 1x, ./images/homepage/special-events-mobile@2x.jpg 2x"
+            media="(min-width: 300px)" />
+          <img src="./images/homepage/special-events-mobile.jpg" alt="Special Events">
+        </picture>
+        <picture class="picture" id="picture-3">
+          <source
+            srcset="./images/homepage/social-events-desktop.jpg 1x, ./images/homepage/social-events-desktop@2x.jpg 2x"
+            media="(min-width: 1024px)">
+          <source
+            srcset="./images/homepage/social-events-tablet.jpg 1x, ./images/homepage/social-events-tablet@2x.jpg 2x"
+            media="(min-width: 768px)">
+          <source
+            srcset="./images/homepage/social-events-mobile.jpg 1x, ./images/homepage/social-events-mobile@2x.jpg 2x"
+            media="(min-width: 300px)" />
+          <img src="./images/homepage/social-events-mobile.jpg" alt="Social Events">
+        </picture>
+        <img class="curve curve--right" src="./images/patterns/pattern-curve-top-right.svg" alt="Curve top right">
+        <img class="lines" src="./images/patterns/pattern-lines.svg" alt="Lines">
       </div>
-      <div class="items_part">
-        <ul class="items">
-          <li class="item" id="item-1">Family Gathering</li>
-          <span class="item_line item_line-active" id="item_line-1"></span>
-          <li class="item" id="item-2">Special Events</li>
-          <span class="item_line" id="item_line-2"></span>
-          <li class="item" id="item-3">Social Events</li>
-          <span class="item_line" id="item_line-3"></span>
+      <div class="items">
+        <ul class="items__list">
+          <li class="items__item items__item--active" id="item-1">
+            <p>Family Gathering</p>
+            <p class="items__line items__line--active" id="line-1"></p>
+          </li>
+          <li class="items__item" id="item-2">
+            <p>Special Events</p>
+            <p class="items__line" id="line-2"></p>
+          </li>
+          <li class="items__item" id="item-3">
+            <p>Social Events</p>
+            <p class="items__line" id="line-3"></p>
+          </li>
         </ul>
         <div>
-          <div class="item_content item_content-active" id="item_content-1">
-            <h2>Family Gathering</h2>
-            <p>We love catering for entire families. So please bring everyone along for a special meal with your
+          <div class="items__content items__content--active" id="content-1">
+            <h2 class="title-2">Family Gathering</h2>
+            <p class="paragraph">We love catering for entire families. So please bring everyone along for a special meal with your
               loved ones. We’ll provide a memorable experience for all.</p>
           </div>
-          <div class="item_content" id="item_content-2">
-            <h2>Special Events</h2>
-            <p>Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you.
+          <div class="items__content" id="content-2">
+            <h2 class="title-2">Special Events</h2>
+            <p class="paragraph">Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you.
               We’ll be sure to mark your special date with an unforgettable meal.</p>
           </div>
-          <div class="item_content" id="item_content-3">
-            <h2>Social Events</h2>
-            <p>Are you looking to have a larger social event? No problem! We’re more than happy to cater for big
+          <div class="items__content" id="content-3">
+            <h2 class="title-2">Social Events</h2>
+            <p class="paragraph">Are you looking to have a larger social event? No problem! We’re more than happy to cater for big
               parties. We’ll work with you to make your event a hit with everyone.</p>
           </div>
-          <a class="button button_dark" href="./booking.html">Book a table</a>
+          <a class="button button--dark" href="./booking.html">Book a table</a>
         </div>
       </div>
     </div>
@@ -179,25 +209,27 @@
 
   <section class="section-4">
     <div class="inner">
-      <h2>Ready to make a reservation?</h2>
-      <a class="button button_transparent" href="./booking.html">Book a table</a>
+      <h2 class="title-2">Ready to make a reservation?</h2>
+      <a class="button button--transparent" href="./booking.html">Book a table</a>
     </div>
   </section>
 
   <footer class="footer">
-    <div class="logo">
+    <div class="footer__container">    
+    <div class="footer__logo">
       <img src="./images/logo.svg" alt="Logo">
     </div>
-    <div class="address">
+    <div class="footer__address">
       <p>Marthwaite, Sedbergh</p>
       <p>Cumbria</p>
       <p>+00 44 123 4567
       </p>
     </div>
-    <div class="openings">
+    <div class="footer__openings">
       <p>Open Times</p>
       <p>Mon - Fri: 09:00 AM - 10:00 PM</p>
       <p>Sat - Sun: 09:00 AM - 11:30 PM</p>
+    </div>
     </div>
   </footer>
 
