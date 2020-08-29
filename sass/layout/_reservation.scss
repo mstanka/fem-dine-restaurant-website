@@ -1,0 +1,19 @@
+.reservation {
+  position: relative;
+  min-height: 53.4rem;
+
+  &__form {
+    height: 58.5rem;
+    width: 32.7rem;
+    position: absolute;
+    top: -10rem;
+    right: 5rem;
+    border: 1px solid red;
+    text-align: center;
+    @include flex(column, center);
+
+    input {
+      max-width: 6rem;
+    }
+  }
+}

@@ -22,30 +22,40 @@
 
   <section class="reservation">
     <div class="inner">
+      <div class="reservation__form">     
       <form>
         <div class="form__field">
-          <label for="input">Name</label>
-          <input type="text" name="name" label="name" id="name">
+          <input type="text" name="name" label="name" id="name" placeholder="Name">
         </div>
         <div class="form__field">
-          <label for="input">Email</label>
-          <input type="email" name="email" label="email" id="email">
+          <input type="email" name="email" label="email" id="email" placeholder="Email">
         </div>
+        <div class="form__field">
+          <label for="date">Pick a date</label>
+          <input type="month" name="month" label="month" id="month" placeholder="MM">
+          <input type="day" name="day" label="day" id="day" placeholder="DD">
+          <input type="year" name="year" label="year" id="year" placeholder="YYYY">
+        </div>
+        <div class="form__field">
+          <label for="time">Pick a time</label>
+          <input type="number" name="hour" label="hour" id="hour" placeholder="00">
+          <input type="number" name="min" label="min" id="min" placeholder="00">
+          <select name="time" id="time" for="time">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </div>
+        <div class="form__field">
+          <span>+</span>
+          <input type="text" name="people" label="people" id="people" placeholder="4 people">
+          <span>-</span>
+        </div>
+
+      </form>
+      <button type="submit" class="button button--dark">Make Reservation</button>
+      </div>
     </div>
-
-    Pick a date
-    Pick a time
-    <button type="submit" class="button button--dark">Make Reservation</button>
-    </form>
-
-
-
   </section>
-
-
-
-
-
 
   <footer class="footer">
     <div class="footer__container">

@@ -1,4 +1,4 @@
-// toggle item list
+// toggle item list - home page section 2
 function toggleItem(toggleItem) {
   for (let i = 1; i < 4; i++) {
     const item = document.getElementById(`item-${i}`);
