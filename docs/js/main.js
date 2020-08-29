@@ -31,3 +31,6 @@ document.getElementById("item-2").addEventListener("click", () => {
 document.getElementById("item-3").addEventListener("click", () => {
   toggleItem(3);
 });
+
+
+// reservation form - booking page
