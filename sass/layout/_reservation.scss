@@ -4,16 +4,83 @@
 
   &__form {
     height: 58.5rem;
-    width: 32.7rem;
+    max-width: 32.7rem;
     position: absolute;
     top: -10rem;
     right: 5rem;
     border: 1px solid red;
     text-align: center;
     @include flex(column, center);
+    
+    @include media-md {
+      padding: 4.8rem;
+    }
+  }
 
-    input {
-      max-width: 6rem;
+  .form {
+    &__field--text {
+      width: 95%;
+      margin: 0 auto;
+
+      .input {
+        width: 95%;
+        height: 4.5rem;
+        margin-bottom: 3.2rem;
+        padding: 0.5rem;
+      }
+    }
+
+    &__field--number {
+      width: 95%;
+      height: 8.1rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 3.2rem;
+      position: relative;
+
+      label {
+        display: block;
+        flex-basis: 100%;
+      }
+
+      .input {
+        width: 26%;
+        padding: 0.75rem;
+        margin: 0 0.3rem;
+      }
+
+      .check-box {
+        display: none;
+      }
+
+      .icon-arrow {
+        position: absolute;
+        top: 4.8rem;
+        right: 2rem;
+        transform: rotate(180deg);
+      }
+    }
+
+    &__field--people {
+      width: 95%;
+      text-align: center;
+      padding-bottom: 1rem;
+      margin: 0 auto;
+      margin-bottom: 3.2rem;
+      border-bottom: 1px solid $ebony-clay;
+
+      .input {
+        width: 70%;
+        text-align: center;
+        border: none;
+      }
+    }
+
+    &__input--error {
+      border-bottom: rgb(221, 51, 51);
     }
   }
 }

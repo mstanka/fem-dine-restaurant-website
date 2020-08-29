@@ -133,6 +133,14 @@ li {
   }
 }
 
+.input {
+  border: none;
+  border-bottom: 1px solid #242B37;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.225px;
+}
+
 .header {
   background: #17192b;
   background-image: url(../images/homepage/hero-bg-mobile.jpg);
@@ -1036,7 +1044,7 @@ li {
 
 .reservation__form {
   height: 58.5rem;
-  width: 32.7rem;
+  max-width: 32.7rem;
   position: absolute;
   top: -10rem;
   right: 5rem;
@@ -1057,7 +1065,81 @@ li {
           align-items: center;
 }
 
-.reservation__form input {
-  max-width: 6rem;
+@media screen and (min-width: 768px) {
+  .reservation__form {
+    padding: 4.8rem;
+  }
+}
+
+.reservation .form__field--text {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.reservation .form__field--text .input {
+  width: 95%;
+  height: 4.5rem;
+  margin-bottom: 3.2rem;
+  padding: 0.5rem;
+}
+
+.reservation .form__field--number {
+  width: 95%;
+  height: 8.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 3.2rem;
+  position: relative;
+}
+
+.reservation .form__field--number label {
+  display: block;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.reservation .form__field--number .input {
+  width: 26%;
+  padding: 0.75rem;
+  margin: 0 0.3rem;
+}
+
+.reservation .form__field--number .check-box {
+  display: none;
+}
+
+.reservation .form__field--number .icon-arrow {
+  position: absolute;
+  top: 4.8rem;
+  right: 2rem;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.reservation .form__field--people {
+  width: 95%;
+  text-align: center;
+  padding-bottom: 1rem;
+  margin: 0 auto;
+  margin-bottom: 3.2rem;
+  border-bottom: 1px solid #242B37;
+}
+
+.reservation .form__field--people .input {
+  width: 70%;
+  text-align: center;
+  border: none;
+}
+
+.reservation .form__input--error {
+  border-bottom: #dd3333;
 }
 /*# sourceMappingURL=main.css.map */
