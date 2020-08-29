@@ -4,13 +4,12 @@
   color: white;
 
   @include media-md {
-    
     padding: 8rem;
     text-align: left;
   }
 
-  @include media-lg {    
-    padding: 4rem;
+  @include media-lg {
+    padding: 7rem;
   }
 
   &__container {
@@ -27,13 +26,12 @@
       grid-template-rows: 14rem 14rem;
       gap: 2rem;
       align-items: start;
-      justify-items: start; 
+      justify-items: start;
     }
 
     @include media-lg {
       min-height: 20rem;
       max-width: 100rem;
-      align-items: center;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: 14rem;
     }

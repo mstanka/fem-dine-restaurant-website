@@ -17,21 +17,17 @@
   }
 
   .inner {
-    @include media-md {
-      width: 63.8rem;
-    }
-
     @include media-lg {
-      min-width: 100rem;
+      min-width: 90rem;
       @include flex(row, space-between);
       align-items: center;
     }
   }
   .title-2 {
-   padding-bottom: 2rem;
+    padding-bottom: 2rem;
 
     @include media-lg {
-      padding: 0; 
+      padding: 0;
     }
   }
 }

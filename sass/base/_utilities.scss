@@ -6,10 +6,13 @@ html {
 
 body {
   font-size: 1.4rem;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .inner {
-  max-width: 32.7rem;
+  width: 90%;
+  max-width: 35rem;
   margin: 0 auto;
 
   @include media-md {

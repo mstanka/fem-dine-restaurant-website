@@ -1,38 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./css/main.css">
   <title>Frontend Mentor | Dine Website Challenge</title>
 </head>
+
 <body>
+  <header class="header">
+    <div class="inner">
+      <img class="header__logo" src="./images/logo.svg" alt="Logo">
+      <h1 class="header__title">Reservations</h1>
+      <p class="paragraph">We can’t wait to host you. If you have any special requirements please feel free to
+        call on the phone number below. We’ll be happy to accommodate you.</p>
+    </div>
+  </header>
 
-  Reservations
+  <section class="reservation">
+    <div class="inner">
+      <form>
+        <div class="form__field">
+          <label for="input">Name</label>
+          <input type="text" name="name" label="name" id="name">
+        </div>
+        <div class="form__field">
+          <label for="input">Email</label>
+          <input type="email" name="email" label="email" id="email">
+        </div>
+    </div>
 
-  We can’t wait to host you. If you have any special requirements please feel free to 
-  call on the phone number below. We’ll be happy to accommodate you.
+    Pick a date
+    Pick a time
+    <button type="submit" class="button button--dark">Make Reservation</button>
+    </form>
 
 
 
-  Name
-  Email
-  Pick a date
-  Pick a time
-
-  Make Reservation
+  </section>
 
 
 
-  Marthwaite, Sedbergh
-  Cumbria
-  +00 44 123 4567
 
-  Open Times
-  Mon - Fri: 09:00 AM - 10:00 PM
-  Sat - Sun: 09:00 AM - 11:30 PM
 
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__logo">
+        <img src="./images/logo.svg" alt="Logo">
+      </div>
+      <div class="footer__address">
+        <p>Marthwaite, Sedbergh</p>
+        <p>Cumbria</p>
+        <p>+00 44 123 4567
+        </p>
+      </div>
+      <div class="footer__openings">
+        <p>Open Times</p>
+        <p>Mon - Fri: 09:00 AM - 10:00 PM</p>
+        <p>Sat - Sun: 09:00 AM - 11:30 PM</p>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/main.js"></script>
 </body>
+
 </html>

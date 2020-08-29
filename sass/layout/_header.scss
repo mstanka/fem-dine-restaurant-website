@@ -32,15 +32,17 @@
 
     @include media-lg {
       align-items: self-start;
-      top: 15rem;
-      height: 50rem;
-      //left: -6rem;
+      top: 8rem;
+      height: 60rem;      
     }
   }
 
   &__logo {
+    width: 10.3rem;
+    height: 4rem;
+
     @include media-lg {
-      padding-bottom: 12rem;
+      padding-bottom: 18rem;
     }
   }
 
@@ -62,16 +64,16 @@
       font-size: 6.4rem;
       line-height: 7.2rem;
       letter-spacing: -0.8px;
-      max-width: 55rem;
+      max-width: 55rem;      
     }
   }
 
   .paragraph {
     max-width: 60.3rem;
-  }
 
-  @include media-lg {
-    max-width: 44.5rem;
-    padding-bottom: 2rem;
+    @include media-lg {
+      max-width: 44.5rem;
+      padding-bottom: 2rem;
+    }
   }
 }

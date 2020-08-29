@@ -1,10 +1,10 @@
 // toggle item list
 function toggleItem(toggleItem) {
   for (let i = 1; i < 4; i++) {
-    const item = document.getElementById("item-" + i);
-    const line = document.getElementById("line-" + i);
-    const content = document.getElementById("content-" + i);
-    const picture = document.getElementById("picture-" + i);
+    const item = document.getElementById(`item-${i}`);
+    const line = document.getElementById(`line-${i}`);
+    const content = document.getElementById(`content-${i}`);
+    const picture = document.getElementById(`picture-${i}`);
 
     item.classList.remove("items__item--active");
     line.classList.remove("items__line--active");
