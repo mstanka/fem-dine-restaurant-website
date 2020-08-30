@@ -17,6 +17,7 @@
       <h1 class="header__title">Reservations</h1>
       <p class="paragraph">We can’t wait to host you. If you have any special requirements please feel free to
         call on the phone number below. We’ll be happy to accommodate you.</p>
+      <a class="button button--transparent" href="./booking.html">Reserve place</a>
     </div>
   </header>
 
@@ -41,7 +42,7 @@
               <input type="number" name="month" aria-label="month" id="month" placeholder="MM" min="0"
                 class="form__input">
               <input type="number" name="day" aria-label="day" id="day" placeholder="DD" min="0" class="form__input">
-              <input type="number" name="year" aria-label="year" id="year" placeholder="YYYY" min="2000"
+              <input type="number" name="year" aria-label="year" id="year" placeholder="YYYY" min="2020"
                 class="form__input">
             </div>
 
@@ -53,20 +54,27 @@
             <div class="form__field-box">
               <input type="number" name="hour" aria-label="hour" id="hour" placeholder="00" min="0" class="form__input">
               <input type="number" name="min" aria-label="min" id="min" placeholder="00" min="0" class="form__input">
-              <input type="text" name="timeZone" aria-label="timeZone" id="timeZone" placeholder="AM" class="form__input">
-              <img src="./images/icons/icon-arrow.svg" alt="Icon arrow" class="icon-arrow">
-              <div class="check-box">
-                <img src="./images/icons/icon-check.svg" alt="Icon check" class="icon-check">
-                <p>AM</p>
-                <p>PM</p>
+              <input type="text" name="day-time" aria-label="day-time" id="day-time" placeholder="AM"
+                class="form__input">
+              <img src="./images/icons/icon-arrow.svg" alt="Icon arrow" class="icon-arrow" id="icon-arrow">
+              <div class="checkbox" id="checkbox">
+                <label for="checkbox-am" class="checkbox__box">
+                  <input type="radio" name="radio" class="checkbox__input" id="checkbox-am" checked><span>AM</span>
+                  <img src="./images/icons/icon-check.svg" alt="Icon check" class="checkbox__icon" id="icon-check">
+                </label>
+                <label for="checkbox-pm" class="checkbox__box">
+                  <input type="radio" name="radio" class="checkbox__input" id="checkbox-pm"><span>PM</span>
+                  <img src="./images/icons/icon-check.svg" alt="Icon check" class="checkbox__icon" id="icon-check">
+                </label>
               </div>
             </div>
           </div>
 
           <div class="form__field form__field--people">
-            <img src="./images/icons/icon-minus.svg" alt="Icon minus" class="icon-minus">
-            <input type="text" name="people" aria-label="people" id="people" placeholder="4 people" class="form__input">
-            <img src="./images/icons/icon-plus.svg" alt="Icon plus" class="icon-plus">
+            <img src="./images/icons/icon-minus.svg" alt="Icon minus" class="icon-count" id="icon-minus">
+            <input type="text" name="people" aria-label="people" id="people" placeholder="4 people" value="4 people"
+              min="0" class="form__input">
+            <img src="./images/icons/icon-plus.svg" alt="Icon plus" class="icon-count" id="icon-plus">
           </div>
           <button type="submit" class="button button--dark button--submit">Make Reservation</button>
         </form>

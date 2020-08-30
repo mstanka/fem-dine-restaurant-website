@@ -106,7 +106,15 @@ li {
 
 .button--submit {
   display: block;
+  max-width: 30.3rem;
+  width: 100%;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .button--submit {
+    max-width: 44.4rem;
+  }
 }
 
 .title-2 {
@@ -933,7 +941,7 @@ li {
 
 @media screen and (min-width: 1024px) {
   .footer {
-    padding: 7rem;
+    padding: 5rem;
   }
 }
 
@@ -971,8 +979,8 @@ li {
     max-width: 100rem;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: 14rem;
-        grid-template-rows: 14rem;
+    -ms-grid-rows: 10rem;
+        grid-template-rows: 10rem;
   }
 }
 
@@ -1038,15 +1046,30 @@ li {
 .reservation {
   position: relative;
   min-height: 53.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .reservation__form {
   height: 58.5rem;
   max-width: 32.7rem;
-  position: absolute;
-  top: -10rem;
-  right: 5rem;
-  border: 1px solid red;
+  padding: 3.2rem;
+  background: white;
+  margin-top: -10rem;
+  margin-bottom: 10rem;
+  -webkit-box-shadow: 2px 3px 15px #5c6779;
+          box-shadow: 2px 3px 15px #5c6779;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1065,12 +1088,50 @@ li {
 @media screen and (min-width: 768px) {
   .reservation__form {
     padding: 4.8rem;
+    max-width: 54rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .reservation__form {
+    position: absolute;
+    top: -10rem;
+    right: 5rem;
   }
 }
 
 .reservation .form__input {
   border: none;
   border-bottom: 1px solid #242B37;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.225px;
+  color: inherit;
+  cursor: pointer;
+}
+
+.reservation .form__input::-webkit-input-placeholder {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.225px;
+  color: inherit;
+}
+
+.reservation .form__input:-ms-input-placeholder {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.225px;
+  color: inherit;
+}
+
+.reservation .form__input::-ms-input-placeholder {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.225px;
+  color: inherit;
+}
+
+.reservation .form__input::placeholder {
   font-size: 1.8rem;
   line-height: 2.8rem;
   letter-spacing: -0.225px;
@@ -1100,7 +1161,11 @@ li {
 }
 
 .reservation .form__field--number label {
-  color: #111111;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.225px;
   text-align: left;
 }
 
@@ -1111,19 +1176,18 @@ li {
   text-align: left;
 }
 
-.reservation .form__field--number .check-box {
-  display: none;
-}
-
 .reservation .form__field--number .icon-arrow {
   position: absolute;
-  top: 4rem;
-  right: 2rem;
+  top: -1rem;
+  right: 1rem;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  cursor: pointer;
+  padding: 2rem;
 }
 
 .reservation .form__field-box {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1150,13 +1214,14 @@ li {
   width: 70%;
   text-align: center;
   border: none;
+  vertical-align: middle;
 }
 
 .reservation .form__msg {
   display: block;
   visibility: hidden;
   font-weight: bold;
-  padding-top: .7rem;
+  padding-top: 0.7rem;
   font-size: 1rem;
   text-align: left;
   color: #dd3333;
@@ -1169,5 +1234,65 @@ li {
 .reservation .form__input--error {
   border-bottom: 1px solid #dd3333;
   color: #dd3333;
+}
+
+.reservation .icon-count {
+  cursor: pointer;
+  width: 1rem;
+  vertical-align: middle;
+  padding: 1rem 0.5rem;
+}
+
+.reservation .checkbox {
+  display: none;
+  position: relative;
+}
+
+.reservation .checkbox__box {
+  cursor: pointer;
+}
+
+.reservation .checkbox__input {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+}
+
+.reservation .checkbox__icon {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.reservation .checkbox--opened {
+  width: 10rem;
+  height: 10.3rem;
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  z-index: 1;
+  border: 1px solid #242B37;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: visible;
+}
+
+.reservation input[type="radio"]:checked + .checkbox__icon {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 /*# sourceMappingURL=main.css.map */

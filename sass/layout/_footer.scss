@@ -9,7 +9,7 @@
   }
 
   @include media-lg {
-    padding: 7rem;
+    padding: 5rem;
   }
 
   &__container {
@@ -33,7 +33,7 @@
       min-height: 20rem;
       max-width: 100rem;
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 14rem;
+      grid-template-rows: 10rem;    
     }
   }
 

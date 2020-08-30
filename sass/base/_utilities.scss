@@ -85,9 +85,16 @@ li {
   background: $cod-grey;
 }
 
-.button--submit {
-  display: block;
+.button--submit { 
+  display: block; 
+  max-width: 30.3rem;
+  width: 100%;
   margin: 0 auto;
+
+  @include media-md {
+    max-width: 44.4rem;
+  }
+
 }
 
 .title-2 {

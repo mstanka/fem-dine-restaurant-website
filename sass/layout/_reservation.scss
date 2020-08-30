@@ -1,18 +1,28 @@
 .reservation {
   position: relative;
   min-height: 53.4rem;
+  @include flex(column, center);
 
   &__form {
     height: 58.5rem;
     max-width: 32.7rem;
-    position: absolute;
-    top: -10rem;
-    right: 5rem;
-    border: 1px solid red;     
+    padding: 3.2rem;
+    background: white;
+    margin-top: -10rem;
+    margin-bottom: 10rem;
+
+    box-shadow: 2px 3px 15px $shuttle-grey;
     @include flex(column, center);
 
     @include media-md {
-      padding: 4.8rem;      
+      padding: 4.8rem;
+      max-width: 54rem;
+    }
+
+    @include media-lg {
+      position: absolute;
+      top: -10rem;
+      right: 5rem;
     }
   }
 
@@ -20,6 +30,14 @@
     &__input {
       border: none;
       border-bottom: 1px solid $ebony-clay;
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+      letter-spacing: -0.225px;
+      color: inherit;
+      cursor: pointer;
+    }
+
+    &__input::placeholder {
       font-size: 1.8rem;
       line-height: 2.8rem;
       letter-spacing: -0.225px;
@@ -37,18 +55,22 @@
       .form__input {
         display: block;
         width: 95%;
-        height: 4.5rem;       
+        height: 4.5rem;
         padding: 0.5rem;
       }
     }
 
     &__field--number {
       width: 95%;
-      height: 8.1rem;     
+      height: 8.1rem;
       position: relative;
 
       label {
-        color: $cod-grey;
+        color: inherit;
+        font-family: inherit;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        letter-spacing: -0.225px;
         text-align: left;
       }
 
@@ -56,35 +78,35 @@
         width: 26%;
         padding: 0.75rem;
         margin: 0 0.3rem;
-        text-align: left;     
-      }
-
-      .check-box {
-        display: none;
+        text-align: left;
       }
 
       .icon-arrow {
         position: absolute;
-        top: 4rem;
-        right: 2rem;
+        top: -1rem;
+        right: 1rem;
         transform: rotate(180deg);
+        cursor: pointer;
+        padding: 2rem;
       }
     }
 
     &__field-box {
+      position: relative;
       @include flex(row, center);
     }
 
     &__field--people {
       width: 95%;
       text-align: center;
-      padding-bottom: 1rem;     
+      padding-bottom: 1rem;
       border-bottom: 1px solid $ebony-clay;
 
       .form__input {
         width: 70%;
         text-align: center;
         border: none;
+        vertical-align: middle;
       }
     }
 
@@ -92,7 +114,7 @@
       display: block;
       visibility: hidden;
       font-weight: bold;
-      padding-top: .7rem;
+      padding-top: 0.7rem;
       font-size: 1rem;
       text-align: left;
       color: rgb(221, 51, 51);
@@ -105,5 +127,50 @@
       border-bottom: 1px solid rgb(221, 51, 51);
       color: rgb(221, 51, 51);
     }
+  }
+
+  .icon-count {
+    cursor: pointer;
+    width: 1rem;
+    vertical-align: middle;
+    padding: 1rem 0.5rem;
+  }
+
+  .checkbox {
+    display: none;
+    position: relative;
+
+    &__box {
+      cursor: pointer;
+    }
+
+    &__input {
+      transform: scale(0);
+      transition: transform 0.5s ease-in;
+    }
+
+    &__icon {
+      //display: none;
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+    }
+  }
+
+  .checkbox--opened {
+    width: 10rem;
+    height: 10.3rem;
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    z-index: 1;
+    border: 1px solid $ebony-clay;
+    background: white;
+    @include flex(column, space-around);
+    visibility: visible;
+  }
+
+  input[type="radio"]:checked + .checkbox__icon {
+    transform: scale(1);
   }
 }

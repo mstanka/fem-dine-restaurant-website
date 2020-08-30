@@ -6,11 +6,20 @@ const email = document.getElementById("email");
 const month = document.getElementById("month");
 const day = document.getElementById("day");
 const year = document.getElementById("year");
-//const date = document.getElementById("date");
+const date = document.getElementById("date");
 
 const hour = document.getElementById("hour");
 const min = document.getElementById("min");
-//const time = document.getElementById("time");
+const dayTime = document.getElementById("day-time");
+const time = document.getElementById("time");
+
+const people = document.getElementById("people");
+const iconMinus = document.getElementById("icon-minus");
+const iconPlus = document.getElementById("icon-plus");
+
+const iconArrow = document.getElementById("icon-arrow");
+const checkBox = document.getElementById("checkbox");
+
 
 function showError(input) {
   input.className = "form__input form__input--error";
@@ -58,9 +67,7 @@ function checkEmail(input) {
 }
 
 function checkInputs(inputArr) {
-  console.log(inputArr);
   inputArr.forEach(function (input) {
-    console.log(input);
     if (input.value.trim() === "") {
       showError(input);
     } else {
@@ -69,8 +76,27 @@ function checkInputs(inputArr) {
   });
 }
 
+function checkPeople(people) {
+  if (people.value > 0) {
+    return true;
+  }
+}
+
+iconArrow.addEventListener("click", () => {
+  checkBox.classList.toggle("checkbox--opened");
+});
+
+iconMinus.addEventListener("click", () => {
+  people.value = parseInt(people.value) - 1;
+});
+
+iconPlus.addEventListener("click", () => {
+  people.value = parseInt(people.value) + 1;
+});
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   checkInputs([name, email, month, day, year, hour, min]);
   checkEmail(email);
+  checkPeople(people);
 });
