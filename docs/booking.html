@@ -23,46 +23,54 @@
   <section class="reservation">
     <div class="inner">
       <div class="reservation__form">
-        <form id="form">
+        <form id="form" class="form">
           <div class="form__field form__field--text">
-            <input type="text" name="name" label="name" id="name" placeholder="Name" class="input">
-            <span class="form__msg"></span>
+            <input type="text" name="name" aria-label="name" id="name" placeholder="Name" class="form__input">
+            <span class="form__msg">Error message</span>
           </div>
 
           <div class="form__field form__field--text">
-            <input type="email" name="email" label="email" id="email" placeholder="Email" class="input">
-            <span class="form__msg"></span>
+            <input type="email" name="email" aria-label="email" id="email" placeholder="Email" class="form__input">
+            <span class="form__msg">Error message</span>
           </div>
 
-          <div class="form__field form__field--number">
+          <div class="form__field form__field--number" id="date">
             <label for="date">Pick a date</label>
-            <span class="form__msg"></span>
-            <input type="month" name="month" label="month" id="month" placeholder="MM" class="input">
-            <input type="day" name="day" label="day" id="day" placeholder="DD" class="input">
-            <input type="year" name="year" label="year" id="year" placeholder="YYYY" class="input">
+            <span class="form__msg">Error message</span>
+            <div class="form__field-box">
+              <input type="number" name="month" aria-label="month" id="month" placeholder="MM" min="0"
+                class="form__input">
+              <input type="number" name="day" aria-label="day" id="day" placeholder="DD" min="0" class="form__input">
+              <input type="number" name="year" aria-label="year" id="year" placeholder="YYYY" min="2000"
+                class="form__input">
+            </div>
+
           </div>
 
-          <div class="form__field form__field--number">
+          <div class="form__field form__field--number" id="time">
             <label for="time">Pick a time</label>
-            <span class="form__msg"></span>
-            <input type="number" name="hour" label="hour" id="hour" placeholder="00" min="0" class="input">
-            <input type="number" name="min" label="min" id="min" placeholder="00" min="0" class="input">
-            <input type="text" name="time" label="time" id="time" placeholder="AM" class="input">
-            <img src="./images/icons/icon-arrow.svg" alt="Icon arrow" class="icon-arrow">
-            <div class="check-box">
-              <img src="./images/icons/icon-check.svg" alt="Icon check" class="icon-check">
-              <p>AM</p>
-              <p>PM</p>
+            <span class="form__msg">Error message</span>
+            <div class="form__field-box">
+              <input type="number" name="hour" aria-label="hour" id="hour" placeholder="00" min="0" class="form__input">
+              <input type="number" name="min" aria-label="min" id="min" placeholder="00" min="0" class="form__input">
+              <input type="text" name="timeZone" aria-label="timeZone" id="timeZone" placeholder="AM" class="form__input">
+              <img src="./images/icons/icon-arrow.svg" alt="Icon arrow" class="icon-arrow">
+              <div class="check-box">
+                <img src="./images/icons/icon-check.svg" alt="Icon check" class="icon-check">
+                <p>AM</p>
+                <p>PM</p>
+              </div>
             </div>
           </div>
+
           <div class="form__field form__field--people">
             <img src="./images/icons/icon-minus.svg" alt="Icon minus" class="icon-minus">
-            <input type="text" name="people" label="people" id="people" placeholder="4 people" class="input">
+            <input type="text" name="people" aria-label="people" id="people" placeholder="4 people" class="form__input">
             <img src="./images/icons/icon-plus.svg" alt="Icon plus" class="icon-plus">
           </div>
-
+          <button type="submit" class="button button--dark button--submit">Make Reservation</button>
         </form>
-        <button type="submit" class="button button--dark">Make Reservation</button>
+
       </div>
     </div>
   </section>
@@ -85,7 +93,7 @@
       </div>
     </div>
   </footer>
-  <script src="./js/main.js"></script>
+  <script src="./js/booking.js"></script>
 </body>
 
 </html>

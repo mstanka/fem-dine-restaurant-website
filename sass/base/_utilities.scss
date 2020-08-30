@@ -46,6 +46,7 @@ li {
   line-height: 1.6rem;
   letter-spacing: 2px;
   text-transform: uppercase;
+  text-align: center;
   padding: 2.4rem 5.4rem;
   transition: all 0.7s ease-in;
 }
@@ -84,6 +85,11 @@ li {
   background: $cod-grey;
 }
 
+.button--submit {
+  display: block;
+  margin: 0 auto;
+}
+
 .title-2 {
   font-size: 3.2rem;
   font-weight: bold;
@@ -108,12 +114,4 @@ li {
     letter-spacing: -0.225px;
     line-height: 3rem;
   }
-}
-
-.input {
-  border: none;
-  border-bottom: 1px solid $ebony-clay;
-  font-size: 1.8rem;
-  line-height: 2.8rem;
-  letter-spacing: -0.225px;
 }
