@@ -17,9 +17,6 @@ const people = document.getElementById("people");
 const iconMinus = document.getElementById("icon-minus");
 const iconPlus = document.getElementById("icon-plus");
 
-const iconArrow = document.getElementById("icon-arrow");
-const checkBox = document.getElementById("checkbox");
-
 
 function showError(input) {
   input.className = "form__input form__input--error";
@@ -81,10 +78,6 @@ function checkPeople(people) {
     return true;
   }
 }
-
-iconArrow.addEventListener("click", () => {
-  checkBox.classList.toggle("checkbox--opened");
-});
 
 iconMinus.addEventListener("click", () => {
   people.value = parseInt(people.value) - 1;
