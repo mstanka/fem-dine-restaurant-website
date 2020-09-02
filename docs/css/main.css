@@ -28,6 +28,7 @@ body {
   width: 90%;
   max-width: 35rem;
   margin: 0 auto;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -38,7 +39,7 @@ body {
 
 @media screen and (min-width: 1024px) {
   .inner {
-    max-width: 100rem;
+    max-width: 110rem;
   }
 }
 
@@ -252,6 +253,129 @@ li {
 
 @media screen and (min-width: 1024px) {
   .header .paragraph {
+    max-width: 44.5rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.header-booking {
+  background: #17192b;
+  background-image: url(../images/booking/hero-bg-mobile.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  min-height: 60rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .header-booking {
+    background-image: url(../images/booking/hero-bg-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header-booking {
+    background-image: url(../images/booking/hero-bg-desktop.jpg);
+    min-height: 82rem;
+    text-align: left;
+  }
+}
+
+.header-booking .inner {
+  height: 38.4rem;
+  position: relative;
+  top: 5.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .header-booking .inner {
+    height: 27.4rem;
+  }
+  .header-booking .inner .button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header-booking .inner {
+    -webkit-box-align: self-start;
+        -ms-flex-align: self-start;
+            align-items: self-start;
+    top: 11rem;
+    height: 40.9rem;
+  }
+}
+
+.header-booking__logo {
+  width: 10.3rem;
+  height: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header-booking__logo {
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header-booking__logo {
+    padding-bottom: 18rem;
+  }
+}
+
+.header-booking__title {
+  font-weight: 300;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  letter-spacing: -0.4px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-booking__title {
+    font-size: 4.8rem;
+    line-height: 6.4rem;
+    letter-spacing: -0.6px;
+    padding: 0 7rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header-booking__title {
+    padding: 0 0 2.4rem 0;
+    font-size: 6.4rem;
+    line-height: 7.2rem;
+    letter-spacing: -0.8px;
+    max-width: 55rem;
+  }
+}
+
+.header-booking .paragraph {
+  max-width: 32.7rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header-booking .paragraph {
+    max-width: 57.3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header-booking .paragraph {
     max-width: 44.5rem;
     padding-bottom: 2rem;
   }
@@ -1062,6 +1186,12 @@ li {
           align-items: center;
 }
 
+@media screen and (min-width: 1024px) {
+  .reservation {
+    min-height: 32rem;
+  }
+}
+
 .reservation__form {
   height: 58.5rem;
   max-width: 32.7rem;
@@ -1069,8 +1199,8 @@ li {
   background: white;
   margin-top: -10rem;
   margin-bottom: 10rem;
-  -webkit-box-shadow: 2px 3px 15px #5c6779;
-          box-shadow: 2px 3px 15px #5c6779;
+  -webkit-box-shadow: 1px 3px 30px #5c6779;
+          box-shadow: 1px 3px 30px #5c6779;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1090,14 +1220,45 @@ li {
   .reservation__form {
     padding: 4.8rem;
     max-width: 54rem;
+    margin-top: -23rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .reservation__form {
     position: absolute;
-    top: -10rem;
-    right: 5rem;
+    top: -50.2rem;
+    right: -5rem;
+  }
+}
+
+.reservation .curve {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .reservation .curve {
+    display: block;
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+    position: absolute;
+    top: -16rem;
+    left: -16.5rem;
+    z-index: -1;
+  }
+}
+
+.reservation .lines {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .reservation .lines {
+    display: block;
+    position: absolute;
+    top: 64rem;
+    left: -6rem;
+    z-index: -1;
   }
 }
 

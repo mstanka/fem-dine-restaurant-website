@@ -4,6 +4,10 @@
   color: $cod-grey;
   @include flex(column, center);
 
+  @include media-lg {
+    min-height: 32rem;
+  }
+
   &__form {
     height: 58.5rem;
     max-width: 32.7rem;
@@ -11,19 +15,44 @@
     background: white;
     margin-top: -10rem;
     margin-bottom: 10rem;
-
-    box-shadow: 2px 3px 15px $shuttle-grey;
+    box-shadow: 1px 3px 30px $shuttle-grey;
     @include flex(column, center);
 
     @include media-md {
       padding: 4.8rem;
       max-width: 54rem;
+      margin-top: -23rem;
     }
 
     @include media-lg {
       position: absolute;
-      top: -10rem;
-      right: 5rem;
+      top: -50.2rem;
+      right: -5rem;
+    }
+  }
+
+  .curve {
+    display: none;
+
+    @include media-lg {
+      display: block;
+      transform: rotateX(180deg);
+      position: absolute;
+      top: -16rem;
+      left: -16.5rem;
+      z-index: -1;
+    }
+  }
+
+  .lines {
+    display: none;
+
+    @include media-lg {
+      display: block;
+      position: absolute;
+      top: 64rem;
+      left: -6rem;
+      z-index: -1;
     }
   }
 }
@@ -162,7 +191,7 @@
 
 // .fas {
 //   font-family: "Spartan", "Font Awesome 5 Free", "Font Awesome 5 Brands",
-//     sans-serif;
+//   sans-serif;
 //   color: $beaver;
 //   font-weight: 900;
 // }

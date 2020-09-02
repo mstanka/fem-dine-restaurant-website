@@ -14,13 +14,14 @@ body {
   width: 90%;
   max-width: 35rem;
   margin: 0 auto;
+  position: relative;
 
   @include media-md {
     max-width: 63.8rem;
   }
 
   @include media-lg {
-    max-width: 100rem;
+    max-width: 110rem;
   }
 }
 

@@ -1,0 +1,89 @@
+.header-booking {
+  background: $mirage;
+  background-image: url(../images/booking/hero-bg-mobile.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  min-height: 60rem;
+  text-align: center;
+
+  @include media-md {
+    background-image: url(../images/booking/hero-bg-tablet.jpg);
+  }
+
+  @include media-lg {
+    background-image: url(../images/booking/hero-bg-desktop.jpg);
+    min-height: 82rem;
+    text-align: left;
+  }
+
+  .inner {
+    height: 38.4rem;
+    position: relative;
+    top: 5.6rem;
+    @include flex(column, space-between);
+
+    @include media-md {
+      height: 27.4rem;
+
+      .button {
+        display: none;
+      }
+    }
+
+    @include media-lg {
+      align-items: self-start;      
+      top: 11rem;
+      height: 40.9rem;
+    }
+  }
+
+  &__logo {
+    width: 10.3rem;
+    height: 4rem;
+
+    @include media-md {
+      margin-right: auto;
+    }
+
+    @include media-lg {
+      padding-bottom: 18rem;
+    }
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    letter-spacing: -0.4px;
+
+    @include media-md {
+      font-size: 4.8rem;
+      line-height: 6.4rem;
+      letter-spacing: -0.6px;
+      padding: 0 7rem;
+    }
+
+    @include media-lg {
+      padding: 0 0 2.4rem 0;
+      font-size: 6.4rem;
+      line-height: 7.2rem;
+      letter-spacing: -0.8px;
+      max-width: 55rem;
+    }
+  }
+
+  .paragraph {
+    max-width: 32.7rem;
+
+    @include media-md {
+      max-width: 57.3rem;
+    }
+
+    @include media-lg {
+      max-width: 44.5rem;
+      padding-bottom: 2rem;
+    }
+  }
+}
