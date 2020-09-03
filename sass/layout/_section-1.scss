@@ -17,7 +17,7 @@
 
   .card:first-child > div {
     @include media-lg {
-      padding-left: 8rem;
+     //padding-left: 12rem;
     }
   }
 
@@ -34,8 +34,12 @@
   }
 
   .picture {
-    margin: -7.2rem auto 0 auto;
+    margin-top: -7.2rem;
     position: relative;
+
+    img {
+      box-shadow: 2px 2px 10px $ebony-clay;
+    }
   }
 
   .pattern {

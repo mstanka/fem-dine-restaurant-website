@@ -39,7 +39,7 @@ body {
 
 @media screen and (min-width: 1024px) {
   .inner {
-    max-width: 110rem;
+    max-width: 120rem;
   }
 }
 
@@ -212,7 +212,7 @@ li {
         -ms-flex-align: self-start;
             align-items: self-start;
     top: 8rem;
-    height: 60rem;
+    height: 58rem;
   }
 }
 
@@ -223,7 +223,7 @@ li {
 
 @media screen and (min-width: 1024px) {
   .header__logo {
-    padding-bottom: 18rem;
+    padding-bottom: 16rem;
   }
 }
 
@@ -438,12 +438,6 @@ li {
 }
 
 @media screen and (min-width: 1024px) {
-  .section-1 .card:first-child > div {
-    padding-left: 8rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
   .section-1 .card:last-child > div {
     padding-right: 8rem;
   }
@@ -459,8 +453,13 @@ li {
 }
 
 .section-1 .picture {
-  margin: -7.2rem auto 0 auto;
+  margin-top: -7.2rem;
   position: relative;
+}
+
+.section-1 .picture img {
+  -webkit-box-shadow: 2px 2px 10px #242B37;
+          box-shadow: 2px 2px 10px #242B37;
 }
 
 .section-1 .pattern {
@@ -578,6 +577,7 @@ li {
   .section-2 {
     min-height: 56.1rem;
     margin-top: -6rem;
+    padding-top: 20rem;
   }
 }
 
@@ -773,12 +773,14 @@ li {
 
 .section-3 .picture img {
   display: none;
+  -webkit-box-shadow: 0px 27px 47px -7px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 27px 47px -7px rgba(0, 0, 0, 0.75);
 }
 
 .section-3 .picture--active img {
   max-width: 40rem;
   display: inline-block;
-  padding-bottom: 4rem;
+  margin-bottom: 4rem;
   z-index: 1;
 }
 
