@@ -2,38 +2,48 @@
   background: $cod-grey;
   text-align: center;
   color: white;
+  max-height: 44rem;
+  height: 100%;
+  margin: 0 auto;
+  padding: 8rem 2.4rem;
 
   @include media-md {
-    padding: 8rem;
+    max-height: 32.8rem;
     text-align: left;
+    padding: 6.4rem 3.9rem;
   }
 
   @include media-lg {
-    padding: 5rem;
+    max-height: 24rem;
+    padding: 7.8rem 16.5rem;
   }
 
   &__container {
-    min-height: 44rem;
+    max-height: 28rem;
+    height: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
+    gap: 3rem;
     align-items: center;
 
     @include media-md {
-      min-height: 20rem;
+      max-height: 20rem;
       max-width: 63.8rem;
       grid-template-columns: 1fr 2fr;
       grid-template-rows: 14rem 14rem;
-      gap: 2rem;
+      column-gap: 4rem;
+      row-gap: 1rem;
       align-items: start;
       justify-items: start;
     }
 
     @include media-lg {
-      min-height: 20rem;
-      max-width: 100rem;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 10rem;    
+      max-height: 8.4rem;
+      max-width: 111rem;
+      grid-template-columns: 1.6fr 2fr 3.8fr;
+      grid-template-rows: 10rem;
+      gap: 2rem;
     }
   }
 

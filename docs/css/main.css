@@ -1054,28 +1054,36 @@ li {
   background: #111111;
   text-align: center;
   color: white;
+  max-height: 44rem;
+  height: 100%;
+  margin: 0 auto;
+  padding: 8rem 2.4rem;
 }
 
 @media screen and (min-width: 768px) {
   .footer {
-    padding: 8rem;
+    max-height: 32.8rem;
     text-align: left;
+    padding: 6.4rem 3.9rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .footer {
-    padding: 5rem;
+    max-height: 24rem;
+    padding: 7.8rem 16.5rem;
   }
 }
 
 .footer__container {
-  min-height: 44rem;
+  max-height: 28rem;
+  height: 100%;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  gap: 3rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1083,13 +1091,15 @@ li {
 
 @media screen and (min-width: 768px) {
   .footer__container {
-    min-height: 20rem;
+    max-height: 20rem;
     max-width: 63.8rem;
     -ms-grid-columns: 1fr 2fr;
         grid-template-columns: 1fr 2fr;
     -ms-grid-rows: 14rem 14rem;
         grid-template-rows: 14rem 14rem;
-    gap: 2rem;
+    -webkit-column-gap: 4rem;
+            column-gap: 4rem;
+    row-gap: 1rem;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
@@ -1099,12 +1109,13 @@ li {
 
 @media screen and (min-width: 1024px) {
   .footer__container {
-    min-height: 20rem;
-    max-width: 100rem;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    max-height: 8.4rem;
+    max-width: 111rem;
+    -ms-grid-columns: 1.6fr 2fr 3.8fr;
+        grid-template-columns: 1.6fr 2fr 3.8fr;
     -ms-grid-rows: 10rem;
         grid-template-rows: 10rem;
+    gap: 2rem;
   }
 }
 
