@@ -258,7 +258,7 @@ li {
   }
 }
 
-.header-booking {
+.h-booking {
   background: #17192b;
   background-image: url(../images/booking/hero-bg-mobile.jpg);
   background-position: top;
@@ -270,20 +270,20 @@ li {
 }
 
 @media screen and (min-width: 768px) {
-  .header-booking {
+  .h-booking {
     background-image: url(../images/booking/hero-bg-tablet.jpg);
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .header-booking {
+  .h-booking {
     background-image: url(../images/booking/hero-bg-desktop.jpg);
     min-height: 82rem;
     text-align: left;
   }
 }
 
-.header-booking .inner {
+.h-booking .inner {
   height: 38.4rem;
   position: relative;
   top: 5.6rem;
@@ -303,16 +303,16 @@ li {
 }
 
 @media screen and (min-width: 768px) {
-  .header-booking .inner {
+  .h-booking .inner {
     height: 27.4rem;
   }
-  .header-booking .inner .button {
+  .h-booking .inner .button {
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .header-booking .inner {
+  .h-booking .inner {
     -webkit-box-align: self-start;
         -ms-flex-align: self-start;
             align-items: self-start;
@@ -321,24 +321,24 @@ li {
   }
 }
 
-.header-booking__logo {
+.h-booking__logo {
   width: 10.3rem;
   height: 4rem;
 }
 
 @media screen and (min-width: 768px) {
-  .header-booking__logo {
+  .h-booking__logo {
     margin-right: auto;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .header-booking__logo {
+  .h-booking__logo {
     padding-bottom: 18rem;
   }
 }
 
-.header-booking__title {
+.h-booking__title {
   font-weight: 300;
   font-size: 3.2rem;
   line-height: 4rem;
@@ -346,7 +346,7 @@ li {
 }
 
 @media screen and (min-width: 768px) {
-  .header-booking__title {
+  .h-booking__title {
     font-size: 4.8rem;
     line-height: 6.4rem;
     letter-spacing: -0.6px;
@@ -355,7 +355,7 @@ li {
 }
 
 @media screen and (min-width: 1024px) {
-  .header-booking__title {
+  .h-booking__title {
     padding: 0 0 2.4rem 0;
     font-size: 6.4rem;
     line-height: 7.2rem;
@@ -364,18 +364,18 @@ li {
   }
 }
 
-.header-booking .paragraph {
+.h-booking .paragraph {
   max-width: 32.7rem;
 }
 
 @media screen and (min-width: 768px) {
-  .header-booking .paragraph {
+  .h-booking .paragraph {
     max-width: 57.3rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .header-booking .paragraph {
+  .h-booking .paragraph {
     max-width: 44.5rem;
     padding-bottom: 2rem;
   }

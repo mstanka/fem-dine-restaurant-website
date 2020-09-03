@@ -14,12 +14,12 @@
 </head>
 
 <body>
-  <header class="header-booking">
+  <header class="h-booking">
     <div class="inner">
       <a href="./index.html">
-        <img class="header-booking__logo" src="./images/logo.svg" alt="Logo">
+        <img class="h-booking__logo" src="./images/logo.svg" alt="Logo">
       </a>
-      <h1 class="header-booking__title">Reservations</h1>
+      <h1 class="h-booking__title">Reservations</h1>
       <p class="paragraph">We can’t wait to host you. If you have any special requirements please feel free to
         call on the phone number below. We’ll be happy to accommodate you.</p>
       <a class="button button--transparent" href="./booking.html">Reserve place</a>
@@ -60,12 +60,13 @@
               <input type="number" name="hour" aria-label="hour" id="hour" placeholder="00" min="0" class="form__input">
               <input type="number" name="min" aria-label="min" id="min" placeholder="00" min="0" class="form__input">
               <div class="form__input form__input--arrow" id="arrow" onclick="rotateArrow()">
-                <select>
+                <select id="select">
                   <optgroup>
                     <option value="fas fa-check" selected>AM</option>
                     <option value="fas fa-check">PM</option>
-                  </optgroup>
+                  </optgroup>                  
                 </select>
+                <label for="select"></label>
               </div>
             </div>
           </div>
