@@ -1,6 +1,10 @@
 .header {
   background: $mirage;
   background-image: url(../images/homepage/hero-bg-mobile.jpg);
+  background-image: image-set(
+    url(../images/homepage/hero-bg-mobile.jpg) 1x,
+    url(../images/homepage/hero-bg-mobile@2x.jpg) 2x
+  );
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,11 +14,19 @@
 
   @include media-md {
     background-image: url(../images/homepage/hero-bg-tablet.jpg);
+    background-image: image-set(
+      url(../images/homepage/hero-bg-tablet.jpg) 1x,
+      url(../images/homepage/hero-bg-tablet@2x.jpg) 2x
+    );
     min-height: 99.2rem;
   }
 
   @include media-lg {
     background-image: url(../images/homepage/hero-bg-desktop.jpg);
+    background-image: image-set(
+      url(../images/homepage/hero-bg-desktop.jpg) 1x,
+      url(../images/homepage/hero-bg-desktop@2x.jpg) 2x
+    );
     min-height: 82rem;
     text-align: left;
   }
@@ -33,7 +45,7 @@
     @include media-lg {
       align-items: self-start;
       top: 8rem;
-      height: 60rem;      
+      height: 60rem;
     }
   }
 
@@ -64,7 +76,7 @@
       font-size: 6.4rem;
       line-height: 7.2rem;
       letter-spacing: -0.8px;
-      max-width: 55rem;      
+      max-width: 55rem;
     }
   }
 

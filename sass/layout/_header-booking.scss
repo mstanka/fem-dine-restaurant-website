@@ -1,6 +1,10 @@
 .h-booking {
   background: $mirage;
   background-image: url(../images/booking/hero-bg-mobile.jpg);
+  background-image: image-set(
+    url(../images/booking/hero-bg-mobile.jpg) 1x,
+    url(../images/booking/hero-bg-mobile@2x.jpg) 2x
+  );
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,10 +14,18 @@
 
   @include media-md {
     background-image: url(../images/booking/hero-bg-tablet.jpg);
+    background-image: image-set(
+      url(../images/booking/hero-bg-tablet.jpg) 1x,
+      url(../images/booking/hero-bg-tablet@2x.jpg) 2x
+    );
   }
 
   @include media-lg {
     background-image: url(../images/booking/hero-bg-desktop.jpg);
+    background-image: image-set(
+      url(../images/booking/hero-bg-desktop.jpg) 1x,
+      url(../images/booking/hero-bg-desktop@2x.jpg) 2x
+    );
     min-height: 82rem;
     text-align: left;
   }
@@ -33,7 +45,7 @@
     }
 
     @include media-lg {
-      align-items: self-start;      
+      align-items: self-start;
       top: 11rem;
       height: 40.9rem;
     }
