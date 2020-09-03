@@ -110,11 +110,12 @@
       padding: 0.5rem;
       margin: 0 0.3rem;
       text-align: left;
+      cursor: pointer;
 
       &--arrow {
         position: relative;
         min-width: 8.8rem;
-        border-bottom: none;
+        border-bottom: none;        
 
         &:after {
           content: "\f078";
@@ -124,7 +125,7 @@
           top: 1rem;
           height: 3.4rem;
           position: absolute;
-          pointer-events: none;
+         // pointer-events: none;
         }
 
         select {
@@ -187,6 +188,10 @@
   width: 1.5rem;
   vertical-align: middle;
   padding: 1rem;
+}
+
+.form__input--arrow .active {
+  transform: rotate(180deg);
 }
 
 // .fas {

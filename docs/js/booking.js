@@ -17,6 +17,7 @@ const people = document.getElementById("people");
 const iconMinus = document.getElementById("icon-minus");
 const iconPlus = document.getElementById("icon-plus");
 
+const arrow = document.getElementById("arrow");
 
 function showError(input) {
   input.className = "form__input form__input--error";
@@ -77,6 +78,10 @@ function checkPeople(people) {
   if (people.value > 0) {
     return true;
   }
+}
+
+function rotateArrow() {
+  arrow.classList.toggle('active');
 }
 
 iconMinus.addEventListener("click", () => {
