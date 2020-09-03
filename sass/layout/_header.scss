@@ -27,7 +27,7 @@
       url(../images/homepage/hero-bg-desktop.jpg) 1x,
       url(../images/homepage/hero-bg-desktop@2x.jpg) 2x
     );
-    min-height: 82rem;
+    min-height: 96rem;
     text-align: left;
   }
 
@@ -45,7 +45,7 @@
     @include media-lg {
       align-items: self-start;
       top: 8rem;
-      height: 58rem;
+      height: 60rem;
     }
   }
 

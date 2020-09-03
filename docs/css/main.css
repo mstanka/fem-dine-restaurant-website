@@ -175,7 +175,7 @@ li {
     background-image: url(../images/homepage/hero-bg-desktop.jpg);
     background-image: -webkit-image-set(url(../images/homepage/hero-bg-desktop.jpg) 1x, url(../images/homepage/hero-bg-desktop@2x.jpg) 2x);
     background-image: image-set(url(../images/homepage/hero-bg-desktop.jpg) 1x, url(../images/homepage/hero-bg-desktop@2x.jpg) 2x);
-    min-height: 82rem;
+    min-height: 96rem;
     text-align: left;
   }
 }
@@ -212,7 +212,7 @@ li {
         -ms-flex-align: self-start;
             align-items: self-start;
     top: 8rem;
-    height: 58rem;
+    height: 60rem;
   }
 }
 
@@ -290,7 +290,7 @@ li {
     background-image: url(../images/booking/hero-bg-desktop.jpg);
     background-image: -webkit-image-set(url(../images/booking/hero-bg-desktop.jpg) 1x, url(../images/booking/hero-bg-desktop@2x.jpg) 2x);
     background-image: image-set(url(../images/booking/hero-bg-desktop.jpg) 1x, url(../images/booking/hero-bg-desktop@2x.jpg) 2x);
-    min-height: 82rem;
+    min-height: 96rem;
     text-align: left;
   }
 }
@@ -346,7 +346,7 @@ li {
 
 @media screen and (min-width: 1024px) {
   .h-booking__logo {
-    padding-bottom: 18rem;
+    padding-bottom: 22rem;
   }
 }
 
@@ -612,6 +612,7 @@ li {
 
 @media screen and (min-width: 1024px) {
   .section-2__header {
+    max-width: 50.2rem;
     text-align: left;
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
