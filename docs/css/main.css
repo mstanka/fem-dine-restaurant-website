@@ -260,7 +260,7 @@ li {
 @media screen and (min-width: 1024px) {
   .header .paragraph {
     max-width: 44.5rem;
-    padding-bottom: 2rem;
+    padding: 3rem 0;
   }
 }
 
@@ -434,6 +434,14 @@ li {
             align-items: center;
     align-items: center;
     text-align: left;
+    min-width: 54rem;
+    height: 72rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section-1 .card:first-child {
+    margin-bottom: 10rem;
   }
 }
 
@@ -576,7 +584,7 @@ li {
 @media screen and (min-width: 1024px) {
   .section-2 {
     min-height: 56.1rem;
-    margin-top: -6rem;
+    margin-top: -8rem;
     padding-top: 20rem;
   }
 }

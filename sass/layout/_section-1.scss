@@ -12,12 +12,20 @@
       @include flex(row, space-between);
       align-items: center;
       text-align: left;
+      min-width: 54rem;
+      height: 72rem;
+    }
+  }
+
+  .card:first-child {
+    @include media-lg {
+      margin-bottom: 10rem;
     }
   }
 
   .card:first-child > div {
     @include media-lg {
-     //padding-left: 12rem;
+      //padding-left: 12rem;
     }
   }
 
