@@ -434,14 +434,18 @@ li {
             align-items: center;
     align-items: center;
     text-align: left;
-    min-width: 54rem;
-    height: 72rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .section-1 .card:first-child {
     margin-bottom: 10rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section-1 .card:first-child > div {
+    padding-left: 2rem;
   }
 }
 
@@ -463,6 +467,13 @@ li {
 .section-1 .picture {
   margin-top: -7.2rem;
   position: relative;
+}
+
+@media screen and (min-width: 1024px) {
+  .section-1 .picture {
+    min-width: 54rem;
+    height: 72rem;
+  }
 }
 
 .section-1 .picture img {
@@ -487,11 +498,12 @@ li {
   z-index: -1;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .section-1 .curve {
     display: block;
     width: 100%;
     position: absolute;
+    overflow: hidden;
   }
 }
 
@@ -593,7 +605,6 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -622,8 +633,8 @@ li {
   .section-2__header {
     max-width: 50.2rem;
     text-align: left;
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
   }
 }
 

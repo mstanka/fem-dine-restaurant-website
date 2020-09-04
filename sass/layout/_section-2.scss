@@ -18,7 +18,6 @@
 
   .inner {
     display: flex;
-    gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
 
@@ -35,7 +34,7 @@
     @include media-lg {
       max-width: 50.2rem;
       text-align: left;
-      flex-basis: 50%;
+      flex-basis: 48%;
     }
 
     .title-2 {

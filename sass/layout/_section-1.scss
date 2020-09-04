@@ -12,8 +12,6 @@
       @include flex(row, space-between);
       align-items: center;
       text-align: left;
-      min-width: 54rem;
-      height: 72rem;
     }
   }
 
@@ -25,7 +23,7 @@
 
   .card:first-child > div {
     @include media-lg {
-      //padding-left: 12rem;
+      padding-left: 2rem;
     }
   }
 
@@ -44,6 +42,11 @@
   .picture {
     margin-top: -7.2rem;
     position: relative;
+
+    @include media-lg {
+      min-width: 54rem;
+      height: 72rem;
+    }
 
     img {
       box-shadow: 2px 2px 10px $ebony-clay;
@@ -64,10 +67,11 @@
     display: none;
     z-index: -1;
 
-    @include media-md {
+    @include media-lg {
       display: block;
       width: 100%;
       position: absolute;
+      overflow: hidden;
     }
   }
 
